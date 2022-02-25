@@ -1,0 +1,2 @@
+Art uses 2000 pixels at most (in height)
+Icons use 225x225 pixels

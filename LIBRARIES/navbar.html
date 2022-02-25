@@ -1,0 +1,119 @@
+<style>
+
+  .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: min-content;
+    background-color: var(--nav_bg_color);
+    box-shadow: 0px var(--border-width) var(--nav_bg_color_selected);
+    display:flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+  }
+  
+  /*Display an icon when the screen is too small*/
+  .topnav .icon {
+    display: none;
+    top:0px;
+  }
+  
+  #logo{ 
+    display:content; 
+  }
+  
+  @media screen and (max-width: 600px) {
+    #logo{display: none !important;}
+  }
+  
+  @media only screen and (hover: none) and (pointer: coarse){
+  
+    #logo{display: none !important;}
+  
+  }
+  
+  /*The a element of the top nav*/
+  @keyframes buttonHI {
+    0%, 100% {
+      background-color: var(--nav_bg_color);
+    }
+    50% {
+      background-color:var(--nav_bg_color_active);
+    }
+  }
+  
+  #comm-button {
+  
+    width: 100%;
+    height: 250%;
+    position: absolute;
+    top:-30px;
+    animation: buttonHI 2s infinite;
+    
+  }
+  
+  #topnav-button {
+    color: var(--nav_txt_color);
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    position:relative;
+    padding: 28px 20px;
+    width:auto;
+    text-decoration: none;
+    margin-top: -2px;
+    font-size: 34px; 
+    transition: 0.3s;
+    font-family: 'Permanent Marker';
+  }
+  
+  #topnav-button.active {
+    background-color: var(--nav_bg_color_selected);
+    color: var(--nav_txt_color_active)!important;
+  }
+  
+  #topnav-button:hover {
+    background-color:var(--nav_bg_color_active);
+    color:black;
+  }
+  
+  #home {
+    height:80%;
+    z-index: 100;
+  }
+  
+</style>
+
+
+<div id="home">
+
+    <!--Top bar-->
+    <div class="topnav" id="myTopnav">
+
+      <a id="logo" href="https://electrodev1.github.io">
+        <img id="logoimg" src="ASSETS/LOGOS/afe.png" style="width:70px; height:70px; position:relative; top:10px;">
+      </a> 
+  
+      <a id="topnav-button" href="https://electrodev1.github.io">Home</a>
+      <a id="topnav-button" href="https://electrodev1.github.io/games">Games</a>
+      <a id="topnav-button" href="https://electrodev1.github.io/art">Art</a>
+      <a id="topnav-button" href="https://electrodev1.github.io/music">Music</a>
+      <a id="topnav-button" href="https://electrodev1.github.io#about">About</a>
+      <a id="topnav-button" href="https://electrodev1.github.io/blog">Blog</a>
+      <a id="topnav-button" class="CommsChange" href="https://electrodev1.github.io/comms_info">Commissions</a>   
+
+    </div>  
+
+</div>
+
+<script type="text/javascript" src="JS/site_theme.js"></script>
+
+<script type="text/javascript">
+   
+  //Make the text smaller when on mobile
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    $(".CommsChange").html("Comms.");
+  }
+  
+</script>

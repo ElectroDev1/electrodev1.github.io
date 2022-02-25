@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!--
+style="-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */"
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+
+  <!--Head-->
+  <head> 
+    
+    <!--embed-->
+    <meta name="theme-color" content="#f0d909">
+    <meta property="og:title" content="Electro⚡ - Art portfolio">
+    <meta property="og:description" content="Check out all my art here">
+    <meta property="og:url" content="https://electrodev1.github.io/art">
+    <meta  property="og:image" content="https://electrodev1.github.io/ASSETS/MISC/art_button.png">
+    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1">
+    <meta name="viewport" content="width=1000;">
+    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+    
+    <!--Get various things-->
+    <script src="jquery.js"></script> 
+    <script src="portfolio_J.js"></script> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS\module.css">
+
+    <!--Get the needed libraries-->
+    <script> 
+ 
+ 
+      $(function(){ $("#art-button-library-2021").load("LIBRARIES/art_button_library_2021.html"); });
+      $(function(){ $("#art-button-library-2022").load("LIBRARIES/art_button_library_2022.html"); });
+      $(function(){ $("#art-page-library").load("LIBRARIES/art_page_library.html"); });
+      $(function(){ $("#navbar-library").load("LIBRARIES/navbar.html"); });
+
+    </script> 
+
+    <title>Electro - Art</title>
+    <link rel="icon" id="site-icon" href="ASSETS/LOGOS/afe.png">
+
+    <!--Background-->
+    <style>
+
+      body {
+  
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        background-color:rgb(18, 2, 66);
+        background-image: linear-gradient(to bottom,rgba(0, 4, 41, 0.5) 0%,rgba(0, 4, 41, 0.5) 100%),  url("ASSETS/site_background.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  
+     }
+   
+    </style>
+
+    <link href="jquery.js">
+    <link rel="stylesheet" type="text/css" href="CSS/portfolio_C.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
+    <!--Navigation bar-->
+    <div id="navbar-library"></div>
+    <div style="
+    height:6em;
+
+    @media screen and (max-width: 600px) {
+     height:10em !important;
+    }
+    
+    ">
+    
+    </div>
+ 
+  </head> 
+
+
+  <!--Body-->
+  <body>
+
+    <!--Art-->
+    <div class="Art-tab">
+
+      <div style="height:1em;"></div>
+      <h1 style="font-size: 400%; text-align: center; margin-top:2px; "class="HeaderText">ART PORTFOLIO</h1>
+      <hr style="width:80vw; position: relative; bottom:40px;">
+
+      <!--2022 page-->
+      <div>
+        <div style="height:2em;"></div>
+        <h2 style="text-align: center; color:white; margin-top:-60px;">2022</h2>
+        <hr style="width:20%; margin-top:-10px;">
+
+        <div style="height:10px;"></div>
+  
+        <!--Art buttons 2021-->
+        <div style="width:90vw; margin: 0 auto;">
+          <div class="Art-photos" id="art-button-library-2022"></div>
+        </div>
+
+        <div style="height:50px;"></div>
+
+      </div>
+  
+      
+      <!--2021 page-->
+      <div>
+        <div style="height:2em;"></div>
+        <h2 style="text-align: center; color:white; margin-top:-60px;">2021 / late 2020</h2>
+        <hr style="width:20%; margin-top:-10px;">
+
+        <div style="display:flex; justify-content: center; align-items:center;">
+
+          <a style="color:white;position: relative; top:6px; background-color: var(--nav_bg_color);
+          box-shadow: 6px 6px var(--nav_bg_color_active), -6px -6px var(--nav_bg_color_active)
+          ,6px -6px var(--nav_bg_color_active),  -6px 6px var(--nav_bg_color_active);"
+            class="btn btn-info btn-lg, Showlink-button" data-toggle="modal" data-target="#Summary2021myModal">
+            <h4>Summary</h4>
+          </a>
+
+        </div>
+
+        <div style="height:10px;"></div>
+  
+        <!--Art buttons 2021-->
+        <div style="width:90vw; margin: 0 auto;">
+          <div class="Art-photos" id="art-button-library-2021"></div>
+        </div>
+
+      </div>
+  
+
+      <div style="height:10px;"></div>
+  
+      <!--Art buttons 2021-->
+      <div style="width:90vw; margin: 0 auto;">
+        <div class="Art-photos" id="art-button-library-2021"></div>
+      </div>
+      
+    </div>
+
+    <!--Art modal lists-->
+    <div id="art-page-library"></div>
+
+    <!--Decoration side bars-->
+    <div id="sidebars-left"></div>
+    <div id="sidebars-right"></div>
+
+    <!--Footer-->
+
+    <style>
+        #ontop:hover{
+         cursor: pointer;
+        }
+    </style>
+
+    <footer style="margin-left:5px; margin-top:40px;">
+        2021 Electro - <a id="ontop" onclick="topFunction()" style="text-decoration: underline; color:white ">Go to the top</a> 
+    </footer>
+
+  </body>
+
+  <!--Change theme based on month-->
+    
+  <script>
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }  
+
+  </script>
+
+</html>

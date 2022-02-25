@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--
+style="-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */"
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+
+  <!--Head-->
+  <head> 
+    
+    <!--embed-->
+    <meta name="theme-color" content="#f0d909">
+    <meta property="og:title" content="Electro⚡ - Games">
+    <meta property="og:description" content="Check out all of my games here">
+    <meta property="og:url" content="https://electrodev1.github.io/games">
+    <meta  property="og:image" content="https://electrodev1.github.io/ASSETS/MISC/games_button.png">
+    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1">
+    <meta name="viewport" content="width=1000;">
+    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+    
+    <!--Get various things-->
+    <script src="jquery.js"></script> 
+    <script src="portfolio_J.js"></script> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS\module.css">
+
+    <!--Get the needed libraries-->
+    <script> 
+ 
+      $(function(){ $("#game-com-button-library").load("LIBRARIES/gamecom_button_library.html"); });
+      $(function(){ $("#game-fan-button-library").load("LIBRARIES/gamefan_button_library.html"); });
+      $(function(){ $("#game-jam-button-library").load("LIBRARIES/gamejam_button_library.html"); });
+      $(function(){ $("#game-tool-button-library").load("LIBRARIES/gametool_button_library.html"); });
+      $(function(){ $("#game-page-library").load("LIBRARIES/game_page_library.html"); });
+      $(function(){ $("#navbar-library").load("LIBRARIES/navbar.html"); });
+
+    </script> 
+
+    <title>Electro - Games</title>
+    <link rel="icon" id="site-icon" href="ASSETS/LOGOS/afe.png">
+
+    <!--Background-->
+    <style>
+
+      body {
+  
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        background-color:rgb(18, 2, 66);
+        background-image: linear-gradient(to bottom,rgba(0, 4, 41, 0.5) 0%,rgba(0, 4, 41, 0.5) 100%),  url("ASSETS/site_background.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  
+     }
+   
+    </style>
+
+    <link href="jquery.js">
+    <link rel="stylesheet" type="text/css" href="CSS/portfolio_C.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
+    <!--Navigation bar-->
+    <div id="navbar-library"></div>
+    <div style="
+    height:6em;
+
+    @media screen and (max-width: 600px) {
+     height:10em !important;
+    }
+    
+    ">
+    
+    </div>
+ 
+  </head> 
+
+
+  <!--Body-->
+  <body>
+
+    <!--Games-->
+    <div class="Games-tab">
+
+        <h2 style="font-size: 400%; text-align: center; margin-top:-35px; " class="HeaderText">GAMES</h2>
+        <hr style="width:80vw; position: relative; bottom:40px;">
+        <div style="padding: 15px 0px; margin-top: 10px;">
+  
+          <h3 style="font-size: 200%; text-align: center; margin-top: -50px;">Commercial games</h3>
+          <div class="Games" id="game-com-button-library"></div>
+  
+        </div>
+      
+        <hr style="width:40vw; position:relative; bottom:20px;">
+
+        <div style="padding: 15px 0px">
+  
+            <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">Game jam games</h3>
+            <div class="Games" id="game-jam-button-library"></div>
+    
+        </div>
+
+        <hr style="width:40vw; position:relative; bottom:20px;">
+
+        <div style="padding: 15px 0px">
+  
+          <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">Fan games</h3>
+          <div class="Games" id="game-fan-button-library"></div>
+  
+        </div>
+
+        <hr style="width:40vw; position:relative; bottom:20px;">
+        <div id="tools"></div>
+        <div style="padding: 15px 0px">
+  
+          <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">Tools</h3>
+          <div class="Games" id="game-tool-button-library"></div>
+  
+        </div>
+  
+      </div>
+
+    <!--Art modal lists-->
+    <div id="game-page-library"></div>
+
+    <!--Decoration side bars-->
+    <div id="sidebars-left"></div>
+    <div id="sidebars-right"></div>
+
+    <!--Footer-->
+
+    <style>
+        #ontop:hover{
+         cursor: pointer;
+        }
+    </style>
+
+    <footer style="margin-left:5px; margin-top:40px;">
+        2021 Electro - <a id="ontop" onclick="topFunction()" style="text-decoration: underline; color:white ">Go to the top</a> 
+    </footer>
+
+  </body>
+
+  <!--Change theme based on month-->
+
+    
+  <script>
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }  
+
+  </script>
+
+</html>

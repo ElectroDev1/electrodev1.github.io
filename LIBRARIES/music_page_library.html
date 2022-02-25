@@ -1,0 +1,871 @@
+ <!--BONC music-->
+  <div class="modal fade" id="BONCModal" role="dialog">
+
+    <div class="modal-dialog">
+    
+     
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h4 class="modal-title">BONK Game Jam build OST</h4>
+
+          <button type="button" class="close" data-dismiss="modal"> 
+      <img src="ASSETS/MISC/li_x.png" style="width:40px; height:40px; margin-top:-40px;">
+    </button>
+    
+        <div style="height:10px"></div>
+
+        <!--Buttons-->
+        
+        
+        <div style="display:flex;">
+        <!--Mission select-->
+          <div style="display: flex;">
+            
+            <div id="circle-small">
+              <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+              src="ASSETS/MISC/audio_icon.png"
+              onclick="play(2.5);">
+              </div> 
+
+          <audio id="audio2.5" class="audio_player" src="ASSETS/AUDIO/BONC/mission_select.ogg"
+          ontimeupdate="get_music_time(2.5,this)"
+
+           ></audio>
+
+          <div style="margin: auto 10px;">
+          <h4 class="modal-title" >Mission select</h4>
+
+            
+          <h3 id="musictime2.5" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 0:03
+          </h3>
+          
+          
+          </div>
+
+        </div>
+
+        <!--Credits-->
+        <div style="display: flex; margin-left:10px;">
+            
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(2.2);">
+            </div> 
+
+        <audio id="audio2.2" class="audio_player" src="ASSETS/AUDIO/BONC/credits.ogg"
+        ontimeupdate="get_music_time(2.2,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >Credits</h4>
+
+          
+        <h3 id="musictime2.2" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:28
+        </h3>
+        
+        
+        </div>
+
+      </div>
+        
+        </div>
+
+
+        <div style="height:10px"></div>  
+
+
+        <div style="display:flex">
+        <!--First wave start-->
+        <div style="display: flex;">
+            
+            <div id="circle-small">
+              <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+              src="ASSETS/MISC/audio_icon.png"
+              onclick="play(3);">
+              </div> 
+
+          <audio id="audio3" class="audio_player" src="ASSETS/AUDIO/BONC/first_wave_start.ogg"
+          ontimeupdate="get_music_time(3,this)"
+
+           ></audio>
+
+          <div style="margin: auto 10px;">
+          <h4 class="modal-title" >First wave start</h4>
+
+            
+          <h3 id="musictime3" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 0:26
+          </h3>
+          
+          
+          </div>
+
+        </div>
+        
+        <!--First wave end-->
+        <div style="display: flex;">
+
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(4);">
+            </div> 
+
+        <audio id="audio4" class="audio_player" src="ASSETS/AUDIO/BONC/first_wave_end.ogg"
+        ontimeupdate="get_music_time(4,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >First wave end</h4>
+
+          
+        <h3 id="musictime4" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:08
+        </h3>
+        
+        
+        </div>
+
+        </div>
+        </div>
+
+
+        <div style="height:10px"></div>  
+         
+
+        <div style="display:flex">
+        <!--Mid wave start-->
+        <div style="display: flex;">
+
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(5);">
+            </div> 
+
+        <audio id="audio5" class="audio_player" src="ASSETS/AUDIO/BONC/mid_wave_start.ogg"
+        ontimeupdate="get_music_time(5,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >Mid wave start</h4>
+
+          
+        <h3 id="musictime5" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:26
+        </h3>
+        
+        
+        </div>
+
+        </div>
+
+        <!--Mid wave end-->
+        <div style="display: flex; margin-left:10px;">
+
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(6);">
+            </div> 
+
+        <audio id="audio6" class="audio_player" src="ASSETS/AUDIO/BONC/mid_wave_end.ogg"
+        ontimeupdate="get_music_time(6,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >Mid wave end</h4>
+
+          
+        <h3 id="musictime6" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:13
+        </h3>
+        
+        
+        </div>
+
+        </div>
+        </div>
+
+
+        <div style="height:10px"></div>  
+
+
+        <div style="display:flex">
+        <!--Final wave start-->
+        <div style="display: flex;">
+
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(7);">
+            </div> 
+
+        <audio id="audio7" class="audio_player" src="ASSETS/AUDIO/BONC/final_wave_start.ogg"
+        ontimeupdate="get_music_time(7,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >Final wave start</h4>
+
+          
+        <h3 id="musictime7" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:26
+        </h3>
+        
+        
+        </div>
+
+        </div>
+
+        <!--Final wave end-->
+        <div style="display: flex;">
+
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(8);">
+            </div> 
+
+        <audio id="audio8" class="audio_player" src="ASSETS/AUDIO/BONC/final_wave_end.ogg"
+        ontimeupdate="get_music_time(8,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >Final wave end</h4>
+
+          
+        <h3 id="musictime8" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:15
+        </h3>
+        
+        
+        </div>
+
+        </div>
+        </div>
+
+        <!--Wave end-->
+        <div style="height:10px"></div>  
+        <div style="display: flex;">
+
+          <div id="circle-small">
+            <img id="Music-player" class="Music-button-small"  alt="Play and pause"
+            src="ASSETS/MISC/audio_icon.png"
+            onclick="play(9);">
+            </div> 
+
+        <audio id="audio9" class="audio_player" src="ASSETS/AUDIO/BONC/wave_lost.ogg"
+        ontimeupdate="get_music_time(9,this)"
+
+         ></audio>
+
+        <div style="margin: auto 10px;">
+        <h4 class="modal-title" >Wave lost</h4>
+
+          
+        <h3 id="musictime9" class="music-timers" style="margin-top: -2px;">
+          <!--Timebar-->
+          0:00 / 0:12
+        </h3>
+        
+        
+        </div>
+
+        </div>
+
+        <!---->
+
+        </div>
+
+        <div class="modal-body">
+
+           
+                <img 
+                style="width:80%; margin-left: auto; margin-right: auto;
+                display: block; " src="ASSETS/COVERS/BONC.png" alt="Bonc"
+                >
+           
+                
+            
+
+          <p></p>
+
+          
+
+        </div>
+        
+        <div class="modal-footer">
+          
+          <div class="modal-link-buttons">
+
+             <!--button links-->
+
+            <a href="https://soundcloud.com/electrozap/sets/bonk-game-jam-build-ost?si=0e2576110fc44fa4a87081ccd77ca21b" target="_blank" class="Showlink-button" 
+               >
+
+              <div style="text-decoration: none; text-align: center; color:white; ">
+
+                <h4>SoundCloud</h4>
+
+              </div>
+
+          </a>
+
+
+          <a href="https://electrodev.itch.io/bonk-jam" target="_blank" class="Showlink-button" 
+               >
+
+              <div style="text-decoration: none; text-align: center; color:white; ">
+
+                <h4>Game page</h4>
+
+              </div>
+
+          </a>
+
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+</div>
+
+ 
+ 
+ <!--Electro who-->
+  <div class="modal fade" id="WhoModal" role="dialog">
+
+    <div class="modal-dialog">
+    
+     
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal"> 
+          <img src="ASSETS/MISC/li_x.png" style="width:41px; height:41px;">
+        </button>
+
+          <div style="display: flex;">
+            
+          <div id="circle">
+          <img id="Music-player" class="Music-button"  alt="Play and pause"
+          src="ASSETS/MISC/audio_icon.png"
+          onclick="play(0);">
+          </div>  
+
+          <audio id="audio0"  class="audio_player"  src="ASSETS/AUDIO/jungle_mood.mp3" 
+          ontimeupdate="get_music_time(0,this)"></audio>
+
+          <div style="margin: auto 10px;">
+            <h4 class="modal-title">Electro random arrangements - Jungle mood</h4>
+            <h3 id="musictime0" class="music-timers" style="margin-top: -2px;">
+              <!--Timebar-->
+              0:00 / 1:06
+            </h3>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="modal-body">
+
+           
+                <img 
+                style="width:60%; margin-left: auto; margin-right: auto;
+                display: block; " src="ASSETS/COVERS/who.png" alt="Electro" id="cover"
+                onclick="play(0)">
+           
+                
+            
+
+          <p>First public music attempt, mostly to try the basics.</p>
+
+        </div>
+        
+        <div class="modal-footer">
+          
+          <div class="modal-link-buttons">
+
+             <!--button links-->
+
+            <a href="https://soundcloud.com/electrozap/jungle-mood?si=8c5ee77a7a644ef08670c0dcf5668f51" target="_blank" class="Showlink-button" 
+               >
+
+              <div style="text-decoration: none; text-align: center; color:white; ">
+
+                <h4>SoundCloud</h4>
+
+              </div>
+
+          </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!--Spamton piano-->
+  <div class="modal fade" id="SpamPianoModal" role="dialog">
+
+    <div class="modal-dialog">
+    
+     
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <button type="button" class="close" data-dismiss="modal"> 
+          <img src="ASSETS/MISC/li_x.png" style="width:41px; height:41px;">
+        </button>
+
+          <div style="display: flex;">
+            
+            <div id="circle">
+              <img id="Music-player" class="Music-button"  alt="Play and pause"
+              src="ASSETS/MISC/audio_icon.png"
+              onclick="play(1);">
+              </div> 
+
+          <audio id="audio1" class="audio_player" src="ASSETS/AUDIO/dialtone_clean.wav" 
+          ontimeupdate="get_music_time(1,this)"
+          ></audio>
+
+          <div style="margin: auto 10px;">
+          <h4 class="modal-title">Deltarune Chapter 2 - "Dialtone" Clean piano version</h4>
+          <h3 id="musictime1" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 1:28
+          </h3>
+          </div>
+
+
+        </div>
+
+        </div>
+
+        <div class="modal-body">
+
+           
+                <img 
+                style="width:60%; margin-left: auto; margin-right: auto;
+                display: block; " src="ASSETS/COVERS/piano.png" alt="Spamton"
+                onclick="play(1)">
+           
+                
+            
+
+          <p>A cover of "Dialtone" from DELTARUNE, replacing the chiptune piano with a cleaner piano.</p>
+
+        </div>
+        
+        <div class="modal-footer">
+          
+          <div class="modal-link-buttons">
+
+             <!--button links-->
+
+            <a href="https://soundcloud.com/electrozap/deltarune-chapter-2-dialtone-clean-piano-version?si=7dba44f6f2974099813e648126b7243b" target="_blank" class="Showlink-button" 
+               >
+
+              <div style="text-decoration: none; text-align: center; color:white; ">
+
+                <h4>SoundCloud</h4>
+
+              </div>
+
+          </a>
+
+          <a href="https://deltarune.com/" target="_blank" class="Showlink-button" style=" padding:8px 30px;;"
+                   >
+    
+                  <div style="text-decoration: none; text-align: center; color:white; display:flex; ">
+                    <img alt="DELTARUNE logo" src="ASSETS/MISC/DELT_logo.png" style="width:50%; margin-left:-18px;"> 
+                    <h4 style="margin: auto 0; margin-left:10px;">Get Deltarune</h4>
+    
+                  </div>
+    
+          </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!--Empty town-->
+  <div class="modal fade" id="CityModal" role="dialog">
+
+        <div class="modal-dialog">
+        
+         
+          <div class="modal-content">
+    
+            <div class="modal-header">
+    
+              <button type="button" class="close" data-dismiss="modal"> 
+          <img src="ASSETS/MISC/li_x.png" style="width:41px; height:41px;">
+        </button>
+    
+              <div style="display: flex;">
+                
+                <div id="circle">
+                  <img id="Music-player" class="Music-button"  alt="Play and pause"
+                  src="ASSETS/MISC/audio_icon.png"
+                  onclick="play(2);">
+                  </div> 
+    
+              <audio id="audio2" class="audio_player" src="ASSETS/AUDIO/empty_town.wav"
+              ontimeupdate="get_music_time(2,this)"
+
+               ></audio>
+    
+              <div style="margin: auto 10px;">
+              <h4 class="modal-title" >Deltarune Chapter 1 - "Empty town" Cover</h4>
+
+                
+              <h3 id="musictime2" class="music-timers" style="margin-top: -2px;">
+                <!--Timebar-->
+                0:00 / 2:09
+              </h3>
+              
+              
+              </div>
+
+            </div>
+    
+            </div>
+    
+            <div class="modal-body">
+    
+               
+                    <img 
+                    style="width:60%; margin-left: auto; margin-right: auto;
+                    display: block; " src="ASSETS/COVERS/city.png" alt="Spamton"
+                    onclick="play(2)">
+               
+                    
+                
+    
+              <p>A cover of "Empty town" from DELTARUNE, replacing the chiptune with smooother instruments and giving it
+                  an overall different feeling.</p>
+
+              
+    
+            </div>
+            
+            <div class="modal-footer">
+              
+              <div class="modal-link-buttons">
+    
+                 <!--button links-->
+    
+                <a href="https://soundcloud.com/electrozap/deltarune-chapter-1-empty-town-cover?si=c6523ab3b7584cbbb674e40870ccde84" target="_blank" class="Showlink-button" 
+                   >
+    
+                  <div style="text-decoration: none; text-align: center; color:white; ">
+    
+                    <h4>SoundCloud</h4>
+    
+                  </div>
+    
+              </a>
+
+
+              <a href="https://deltarune.com/" target="_blank" class="Showlink-button" style=" padding:8px 30px;;"
+                   >
+    
+                  <div style="text-decoration: none; text-align: center; color:white; display:flex; ">
+                    <img alt="DELTARUNE logo" src="ASSETS/MISC/DELT_logo.png" style="width:50%; margin-left:-18px;"> 
+                    <h4 style="margin: auto 0; margin-left:10px;">Get Deltarune</h4>
+    
+                  </div>
+    
+              </a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+          
+        </div>
+    
+  </div>
+    
+<!--Bettertimes-->
+<div class="modal fade" id="MassacreModal" role="dialog">
+
+  <div class="modal-dialog">
+  
+   
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal"> 
+        <img src="ASSETS/MISC/li_x.png" style="width:41px; height:41px;">
+      </button>
+
+        <div style="display: flex;">
+          
+        <div id="circle">
+        <img id="Music-player" class="Music-button"  alt="Play and pause"
+        src="ASSETS/MISC/audio_icon.png"
+        onclick="play(10);">
+        </div>  
+
+        <audio id="audio10"  class="audio_player"  src="ASSETS/AUDIO/memories_of_a_better_time.ogg" 
+        ontimeupdate="get_music_time(10,this)"
+        ></audio>
+
+        <div style="margin: auto 10px;">
+          <h4 class="modal-title">Rocket Hat - Memories of a better time</h4>
+          <h3 id="musictime10" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 1:01
+          </h3>
+          </div>
+
+      </div>
+
+      </div>
+
+      <div class="modal-body">
+
+         
+              <img 
+              style="width:60%; margin-left: auto; margin-right: auto;
+              display: block; " src="ASSETS/COVERS/massacre.png" alt="massacre"
+              onclick="play(10)">
+         
+              
+          
+
+        
+
+      </div>
+      
+      <div class="modal-footer">
+        
+        <div class="modal-link-buttons">
+
+           <!--button links-->
+
+          <a href="https://soundcloud.com/electrozap/memories-of-a-better-time?si=f0ccdff3a47043ddba56bf45739835bb" target="_blank" class="Showlink-button" 
+             >
+
+            <div style="text-decoration: none; text-align: center; color:white; ">
+
+              <h4>SoundCloud</h4>
+
+            </div>
+
+        </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+</div>
+
+<!--A town full of life-->
+<div class="modal fade" id="TownLifeModal" role="dialog">
+
+  <div class="modal-dialog">
+  
+   
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal"> 
+        <img src="ASSETS/MISC/li_x.png" style="width:41px; height:41px;">
+      </button>
+
+        <div style="display: flex;">
+          
+        <div id="circle">
+        <img id="Music-player" class="Music-button"  alt="Play and pause"
+        src="ASSETS/MISC/audio_icon.png"
+        onclick="play(11);">
+        </div>  
+
+        <audio id="audio11"  class="audio_player"  src="ASSETS/AUDIO/a_town_full_of_life.ogg" 
+        ontimeupdate="get_music_time(11,this)"
+        ></audio>
+
+        <div style="margin: auto 10px;">
+          <h4 class="modal-title">Rocket Hat - A town full of life by Edgar</h4>
+          <h3 id="musictime11" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 1:26
+          </h3>
+          </div>
+
+      </div>
+
+      </div>
+
+      <div class="modal-body">
+
+         
+              <img 
+              style="width:60%; margin-left: auto; margin-right: auto;
+              display: block; " src="ASSETS/COVERS/band.png" alt="massacre"
+              onclick="play(11)">
+         
+              
+          
+
+        
+
+      </div>
+      
+      <div class="modal-footer">
+        
+        <div class="modal-link-buttons">
+
+           <!--button links-->
+
+          <a href="https://soundcloud.com/electrozap/memories-of-a-better-time?si=f0ccdff3a47043ddba56bf45739835bb" target="_blank" class="Showlink-button" 
+             >
+
+            <div style="text-decoration: none; text-align: center; color:white; ">
+
+              <h4>SoundCloud</h4>
+
+            </div>
+
+        </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+</div>
+
+<!--Kri 2021-->
+<div class="modal fade" id="Kri_2021Modal" role="dialog">
+
+  <div class="modal-dialog">
+  
+   
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal"> 
+        <img src="ASSETS/MISC/li_x.png" style="width:41px; height:41px;">
+      </button>
+
+        <div style="display: flex;">
+          
+        <div id="circle">
+        <img id="Music-player" class="Music-button"  alt="Play and pause"
+        src="ASSETS/MISC/audio_icon.png"
+        onclick="play(12);">
+        </div>  
+
+        <audio id="audio12"  class="audio_player"   src="ASSETS/AUDIO/recollecting_our_thoughts.mp3" 
+        ontimeupdate="get_music_time(12,this)"
+        ></audio>
+
+        <div style="margin: auto 10px;">
+          <h4 class="modal-title">Recollecting our thoughts - Christmas 2021</h4>
+          <h3 id="musictime12" class="music-timers" style="margin-top: -2px;">
+            <!--Timebar-->
+            0:00 / 5:01
+          </h3>
+          </div>
+
+      </div>
+
+      </div>
+
+      <div class="modal-body">
+
+         
+              <img 
+              style="width:60%; margin-left: auto; margin-right: auto;
+              display: block; " src="ASSETS/COVERS/kri_2021.png" alt="massacre"
+              onclick="play(12)">
+         
+              
+          
+
+        
+
+      </div>
+      
+      <div class="modal-footer">
+        
+        <div class="modal-link-buttons">
+
+           <!--button links-->
+
+          <a href="https://soundcloud.com/electrozap/recollecting-our-thoughts" target="_blank" class="Showlink-button" 
+             >
+
+            <div style="text-decoration: none; text-align: center; color:white; ">
+
+              <h4>SoundCloud</h4>
+
+            </div>
+
+        </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="JS/music_get_indexes.js"></script>
