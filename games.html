@@ -38,6 +38,7 @@ user-select: none; /* Standard */"
       $(function(){ $("#game-tool-button-library").load("LIBRARIES/gametool_button_library.html"); });
       $(function(){ $("#game-page-library").load("LIBRARIES/game_page_library.html"); });
       $(function(){ $("#navbar-library").load("LIBRARIES/navbar.html"); });
+      $(function(){ $("#footer").load("LIBRARIES/footer.html"); });
 
     </script> 
 
@@ -92,8 +93,17 @@ user-select: none; /* Standard */"
         <hr style="width:80vw; position: relative; bottom:40px;">
         <div style="padding: 15px 0px; margin-top: 10px;">
   
-          <h3 style="font-size: 200%; text-align: center; margin-top: -50px;">Commercial games</h3>
+          <h3 style="font-size: 200%; text-align: center; margin-top: -50px;">Current big project</h3>
           <div class="Games" id="game-com-button-library"></div>
+  
+        </div>
+
+        <hr style="width:40vw; position:relative; bottom:15px;">
+        <div id="tools"></div>
+        <div style="padding: 15px 0px">
+  
+          <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">Tools</h3>
+          <div class="Games" id="game-tool-button-library"></div>
   
         </div>
       
@@ -115,14 +125,7 @@ user-select: none; /* Standard */"
   
         </div>
 
-        <hr style="width:40vw; position:relative; bottom:20px;">
-        <div id="tools"></div>
-        <div style="padding: 15px 0px">
-  
-          <h3 style="font-size: 200%; text-align: center; margin-top: -20px;">Tools</h3>
-          <div class="Games" id="game-tool-button-library"></div>
-  
-        </div>
+        
   
       </div>
 
@@ -141,9 +144,7 @@ user-select: none; /* Standard */"
         }
     </style>
 
-    <footer style="margin-left:5px; margin-top:40px;">
-        2021 Electro - <a id="ontop" onclick="topFunction()" style="text-decoration: underline; color:white ">Go to the top</a> 
-    </footer>
+    <div id="footer"></div>
 
   </body>
 
