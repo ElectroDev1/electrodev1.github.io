@@ -49,5 +49,10 @@ $(function() {
 
     }
 
+    $("#title-logo").attr("src", "ASSETS/LOGOS/pfp.png");
+
+    document.body.style.backgroundImage = 
+           "linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('ASSETS/bkg.png')";
+
 }
 );
