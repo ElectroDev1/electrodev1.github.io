@@ -91,29 +91,30 @@
     <!--Top bar-->
     <div class="topnav" id="myTopnav">
 
-      <a id="logo" href="https://electrodev1.github.io/home">
-        <img id="logoimg" src="ASSETS/LOGOS/afe.png" style="width:70px; height:70px; position:relative; top:10px;">
+      <a id="logo" href="https://electrodev1.github.io/">
+        <img id="logoimg" src="/ASSETS/LOGOS/afe.png" style="width:70px; height:70px; position:relative; top:10px;">
       </a> 
   
-      <a id="topnav-button" href="https://electrodev1.github.io/home">Home</a>
+      <a id="topnav-button" href="https://electrodev1.github.io/">Home</a>
       <a id="topnav-button" href="https://electrodev1.github.io/games">Games</a>
       <a id="topnav-button" href="https://electrodev1.github.io/art">Art</a>
       <a id="topnav-button" href="https://electrodev1.github.io/music">Music</a>
-      <a id="topnav-button" href="https://electrodev1.github.io/home#about">About</a>
-      <a id="topnav-button" href="https://electrodev1.github.io/blog">Blog</a>
+      <!--<a id="topnav-button" href="https://electrodev1.github.io/home#about">About</a>-->
+      <a id="topnav-button" href="https://electrodev1.github.io/blog">Blogs</a>
       <a id="topnav-button" class="CommsChange" href="https://electrodev1.github.io/comms_info">Commissions</a>   
 
     </div>  
 
 </div>
 
-<script type="text/javascript" src="JS/site_theme.js"></script>
+<script src="/JS/site_theme.js"></script>
 
 <script type="text/javascript">
    
   //Make the text smaller when on mobile
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
     $(".CommsChange").html("Comms.");
+    console.log("Giving navbar mobile text")
   }
   
 </script>

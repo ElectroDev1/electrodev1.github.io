@@ -14,7 +14,7 @@ user-select: none; /* Standard */"
     <!--embed-->
     <meta name="theme-color" content="#f0d909">
     <meta property="og:title" content="Electro⚡ - Art portfolio">
-    <meta property="og:description" content="Check out all my art here">
+    <meta property="og:description" content="Check out my art here">
     <meta property="og:url" content="https://electrodev1.github.io/art">
     <meta  property="og:image" content="https://electrodev1.github.io/ASSETS/MISC/art_button.png">
     <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1">
@@ -58,6 +58,77 @@ user-select: none; /* Standard */"
         background-attachment: scroll;
   
      }
+
+     :root{
+       --art-size: 140px;
+     }
+
+    .Artbutton{
+      background:white;
+      width:var(--art-size); height:var(--art-size);
+      overflow:hidden;
+      background-color: var(--nav_bg_color_active);
+      color:white;
+      margin-top:12px;
+      margin-left:9px;
+      margin-right:9;
+      box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
+      ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
+      transition: all 2s ease-in-out;
+    
+    }
+
+    .Artbutton img{
+      width:var(--art-size);
+      height:var(--art-size);
+      background:white;
+      max-width:var(--art-size);max-height: var(--art-size);
+      min-width:var(--art-size);min-height: var(--art-size);
+
+      animation: artbutton-scale-out 0.1s infinite;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+
+    .Artbutton img:hover{
+      animation: artbutton-scale-in 0.5s infinite;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      cursor:pointer;
+    }
+
+    @keyframes artbutton-scale-in {
+      from {
+        transform: scale(1) rotate(0deg);
+        filter: opacity(100%);
+      }
+      
+      to {
+        transform: scale(1.5) rotate(5deg);
+        filter: opacity(60%);
+      }
+    }
+
+    @keyframes artbutton-scale-out {
+      from {
+        transform: scale(1.5) rotate(5deg);
+        filter: opacity(60%);
+      }
+      
+      to {
+        transform: scale(1) rotate(0deg);
+        filter: opacity(100%);
+      }
+    }
+
+    @keyframes alpha_fade {
+      0% {
+        filter: opacity(0%);
+      }
+      100%{
+        filter: opacity(100%);
+      }
+    }
    
     </style>
 

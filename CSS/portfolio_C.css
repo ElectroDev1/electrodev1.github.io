@@ -7,10 +7,12 @@ main {
 }
 
 .HeaderText{
+  
   font-family: 'Permanent Marker';
   background: -webkit-linear-gradient(rgb(255, 255, 255), var(--nav_bg_color_active));
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+
 }
 
 #container {
@@ -22,7 +24,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
         background-color: black;
         background-color:rgb(18, 2, 66);
-        background-image: linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('ASSETS/bkg.png');
+        background-image: linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('/ASSETS/bkg.png');
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -50,7 +52,7 @@ ul {
 }
 
 li::before {
-  background-image:url("ASSETS/MISC/li.png");
+  background-image:url("/ASSETS/MISC/li.png");
 
   content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: white; /* Change the color */
@@ -83,7 +85,6 @@ margin: 15px 0;
 
 
 #title-logo:hover{
-  animation: titleshake 0.5s;
   animation-iteration-count: foward;
 }
 
@@ -367,7 +368,8 @@ margin: 15px 0;
   padding:20px 0px;
 }
 
-.Games input{
+
+.Games #gamebtn{
   width:80%; 
   height:80%;
   color:white;
@@ -378,11 +380,11 @@ margin: 15px 0;
   z-index:2;
 } 
 
-.Games input:hover{
+.Games #gamebtn:hover{
   transform: scale(1.1) ;
   z-index: 99;
+  cursor: pointer;
 }
-
 
 /*Art photos*/
 
@@ -394,14 +396,17 @@ margin: 15px 0;
   display:flex;
   flex-flow: row wrap;
   margin-top:-10px;
+
+
   width:fit-content;
+
+
   padding: 20px 0;
   height : 100%;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
- 
 }
 
 .Art-photos div {
@@ -411,6 +416,10 @@ margin: 15px 0;
 .Art-photos input{
   width:155px;
   height:155px;
+
+  max-width:155px;max-height: 155px;
+  min-width:155px;min-height: 155px;
+
   background-color: var(--nav_bg_color_active);
   color:white;
   margin-top:12px;
@@ -432,6 +441,8 @@ margin: 15px 0;
   transform: rotate(10deg);
   transform: scale(1.2) rotate(5deg);
 }
+
+
 
 /*Music covers*/
 .Music-photos {

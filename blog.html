@@ -1,94 +1,171 @@
 <!DOCTYPE html>
-
-
-<!--
-style="-webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */"
--->
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" >
-
-  <!--Head-->
-  <head> 
+<head>
     
     <!--embed-->
     <meta name="theme-color" content="#f0d909">
-    <meta property="og:title" content="Electro⚡ - Blog">
-    <meta property="og:description" content="All site updates and more can be found here">
+    <meta property="og:title" content="Electro⚡ - Blogs">
+    <meta property="og:description" content="">
     <meta property="og:url" content="https://electrodev1.github.io/blog">
     <meta property="og:image" content="https://electrodev1.github.io/ASSETS/MISC/blog_electro.png">
-    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1">
-    <meta name="viewport" content="width=1000;">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+    <meta name="viewport" content="width=1000">
     
     <!--Get various things-->
-    <script src="jquery.js"></script> 
-    <script src="portfolio_J.js"></script> 
+    <script src="JS/jquey.js"></script> 
+    <script src="JS/portfolio_J.js"></script> 
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS\module.css">
     <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 
-    <!--Get the needed libraries-->
     <script> 
- 
-      $(function(){ $("#blog-button-library").load("LIBRARIES/blog_button_library.html"); });
-      $(function(){ $("#blog-page-library").load("LIBRARIES/blog_page_library.html"); });
+
       $(function(){ $("#navbar-library").load("LIBRARIES/navbar.html"); });
       $(function(){ $("#footer").load("LIBRARIES/footer.html"); });
+      $(function(){ $("#blog-buttons").load("LIBRARIES/blog_button_library.html"); });
 
-      $(function(){ $("#game-page-library").load("LIBRARIES/game_page_library.html"); });
-      $(function(){ $("#music-page-library").load("LIBRARIES/music_page_library.html"); });
+    </script>
 
-      function isPlaying(audelem) { return !audelem.paused; }
-    
-      function play(AudioID){
-           var audio = document.getElementById("audio"+AudioID);
-    
-           var players = document.getElementsByClassName('audio_player');
-           for(i=0; i<players.length; i++){  
-             
-               var currentID = players[i].id;
-               
-    
-               if(currentID!="audio"+AudioID){players[i].pause(); players[i].currentTime = 0;} }
-    
-    
-           var PL = isPlaying(audio);
-    
-           if(!PL){
-    
-            audio.play();
-    
-           }
-           else{
-    
-            audio.pause();
-    
-          }
-      }
-
-    </script> 
-
-    <title>Electro - Blog</title>
+    <title>Electro - Blogs</title>
     <link rel="icon" id="site-icon" href="ASSETS/LOGOS/afe.png">
 
     <!--Background-->
     <style>
 
-      body {
-  
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: black;
-        background-color:rgb(18, 2, 66);
-        background-image: linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('ASSETS/bkg.png');
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-  
-     }
-   
+        :root{
+        --nav_bg_color: #333;
+        --nav_bg_color_active: #f0d909;
+        --nav_bg_color_selected: #f0d909;
+        --nav_txt_color: white;
+        --nav_txt_color_active: black;
+        --border-width: 7px;
+        --ng-invert0: 0;
+        --ng-invert1: 0;
+
+        --blog-width: 70vw;
+        --blog-height: 200px;
+
+        --img-size : 175px;
+
+        --textblog-height : calc( var(--blog-height) - 125px );
+        }
+
+        body {
+    
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: black;
+          background-color:rgb(18, 2, 66);
+          background-image: linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('ASSETS/bkg.png');
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+    
+       }
+
+       .Blog-tab {
+           
+           background: var(--nav_bg_color);
+
+           -webkit-user-select: text; /* Safari */        
+            -moz-user-select: text; /* Firefox */
+            -ms-user-select: text; /* IE10+/Edge */
+            user-select: text; /* Standard */
+
+           width: var(--blog-width);
+           height: var(--blog-height);
+
+           margin:0 auto;
+           
+
+           box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
+           ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
+
+           display:flex;
+           overflow: hidden;
+       }
+
+       .blog-header-img{
+          max-height:var(--img-size);
+          max-width: var(--img-size);
+          min-width: var(--img-size);
+          min-height:var(--img-size);
+
+          position: relative;
+          top:12px; left:10px;
+       }
+
+       .blogtextcontent{
+        position: relative;
+         margin-left:10px;
+         height:auto;
+         min-width:calc(var(--blog-width) - 175px - 12px);
+       }
+
+       .blog-title{
+        font-size:200%;
+        color:white;
+        margin: 10px;
+       }
+
+       .blog-link{
+        color:white;
+        text-decoration: none;
+       }
+
+       .blog-link:hover{
+        text-decoration: underline !important;   
+       }
+
+       .blog-line{
+        width: 522px;
+        max-width: 30vw;
+        height: 47px;
+        margin: 10px;
+        border-bottom: 3px solid white;
+        margin-top:-50px;
+        }
+
+        .blog-desc{
+        margin:10px;
+        font-size: auto;
+
+        min-height: var(--textblog-height);
+        max-height: var(--textblog-height);
+        overflow: hidden;
+        }
+
+        .author{
+        display:flex;
+        color:white;
+        margin:12px;
+           
+        font-size:120%;
+        
+        position:absolute;
+        left:-5px;
+        right:15px;
+        bottom: 0;
+        top: calc(var(--blog-height) - 62px);
+        height:auto;
+        }
+
+
+        
+        .username{
+        position: relative;
+        bottom:12px;
+        }
+
+        .pfp{
+            width:100px; height:100px;
+        transform: scale(0.45,0.45);
+        margin-top: -28px;
+        margin-left: -20px;
+        border-radius: 50%;
+        }
+           
+
     </style>
 
     <link href="jquery.js">
@@ -108,61 +185,27 @@ user-select: none; /* Standard */"
     ">
     
     </div>
- 
-  </head> 
 
+</head>
+<body>
+    
+    <div>
 
-  <style>  
-
-  </style>
-
-  <!--Body-->
-  <body>
-
-    <div class="Blog-tab">
-
-      <div style="height:1em;"></div>
-      <h1 style="font-size: 400%; text-align: center; margin-top:2px; position:relative; top:10px" class="HeaderText">BLOG</h1>
-
-      <hr style="width:80vw; margin-top:-30px;">
-
-      <div class="Blog-buttons" style="margin-top:-1em;"  id="blog-button-library"></div>
-     
-
+        <div style="height:1em;"></div>
+       
+        <h1 style="font-size: 400%; text-align: center; margin-top:2px; position:relative; top:10px" class="HeaderText">BLOGS</h1>  
+  
+        <hr style="width:80vw; margin-top:-30px;">
+       
     </div>
 
-    <!--Decoration side bars-->
+    <!--Example blog header-->
+    <div id="blog-buttons"></div>
+
     <div id="sidebars-left"></div>
     <div id="sidebars-right"></div>
 
-    <div id="blog-page-library"></div>
+    <div id="footer" style="margin-top:206px;"></div>
 
-    <!--Art modal lists-->
-    <div id="game-page-library"></div>
-    <div id="music-page-library"></div>
-
-    <!--Footer-->
-
-    <style>
-        #ontop:hover{
-         cursor: pointer;
-        }
-    </style>
-
-<div id="footer"></div>
-
-  </body>
-
-  <!--Change theme based on month-->
-    
-  <script>
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }  
-
-  </script>
-
+</body>
 </html>
