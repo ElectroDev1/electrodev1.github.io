@@ -65,7 +65,7 @@ user-select: none; /* Standard */"
 
     .Artbutton{
       width:var(--art-size); height:var(--art-size);
-      overflow:hidden;
+  
       background-color: var(--nav_bg_color_active);
       color:white;
       margin-top:12px;
@@ -74,10 +74,19 @@ user-select: none; /* Standard */"
       box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
       ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
       transition: all 2s ease-in-out;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
     
     }
 
-    .Artbutton img{
+    
+
+
+    .Artbutton #gamebtn{
       width:var(--art-size);
       height:var(--art-size);
       background:var(--nav_bg_color);
@@ -89,7 +98,7 @@ user-select: none; /* Standard */"
       animation-iteration-count: 1;
     }
 
-    .Artbutton img:hover{
+    .Artbutton:hover #gamebtn{
       animation: artbutton-scale-in 0.5s infinite;
       animation-fill-mode: forwards;
       animation-iteration-count: 1;
@@ -97,26 +106,27 @@ user-select: none; /* Standard */"
     }
 
     @keyframes artbutton-scale-in {
+      
       from {
         transform: scale(1) rotate(0deg);
-        filter: opacity(100%);
+        filter: opacity(100%) blur(0px);
       }
       
       to {
         transform: scale(1.5) rotate(5deg);
-        filter: opacity(60%);
+        filter: opacity(40%) blur(1px);
       }
     }
 
     @keyframes artbutton-scale-out {
       from {
         transform: scale(1.5) rotate(5deg);
-        filter: opacity(60%);
+        filter: opacity(40%) blur(1px);
       }
       
       to {
         transform: scale(1) rotate(0deg);
-        filter: opacity(100%);
+        filter: opacity(100%) blur(0px);
       }
     }
 
@@ -128,6 +138,73 @@ user-select: none; /* Standard */"
         filter: opacity(100%);
       }
     }
+
+    
+   
+
+    @-webkit-keyframes arttitle-scale-out {
+      0% {
+        transform: translate(0,0);
+        filter: opacity(100%);
+      }
+      
+      100% {
+        transform: translate(0, calc(var(--art-size) / 2 - 10px) );
+        filter: opacity(0%);
+      }
+    }
+
+    @-webkit-keyframes arttitle-scale-in {
+      
+      0% {
+        transform: translate(0, calc(var(--art-size) / 2 - 10px) );
+        filter: opacity(0%);
+      }
+      
+      100% {
+        transform: translate(0,0);
+        filter: opacity(100%);
+      }
+    }
+
+    
+
+    .ArtTitle {
+      text-align: center;
+      position:absolute;
+      font-size:120%;
+      font-weight: bold;
+      z-index: 20;
+      transform: translate(0, calc(var(--art-size) / 2 - 10px) );
+        filter: opacity(0%);
+
+      -webkit-text-stroke: .1px #000000;
+      text-shadow: 0px 0px 10px #000000;
+    } 
+
+    .Artbutton:hover .ArtTitle{
+
+      animation: arttitle-scale-in 0.5s infinite;
+      -webkit-animation: arttitle-scale-in 0.5s infinite;
+      -moz-animation: arttitle-scale-in 0.5s infinite;
+      -ms-animation: arttitle-scale-in 0.5s infinite;
+      -o-animation: arttitle-scale-in 0.5s infinite;
+
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+
+      animation-iteration-count: 1;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+
+      cursor:pointer;
+    }
+
    
     </style>
 
