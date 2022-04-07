@@ -60,19 +60,49 @@ user-select: none; /* Standard */"
      }
 
      :root{
-       --art-size: 140px;
+       --art-size: 130px;
+     }
+
+     .Art-container{
+    
+     margin: 0 auto;
+     width:80vw;
+   
+     
+     display:flex;
+     flex-wrap: wrap;
+     justify-items: center;
+     align-items: center;
+     
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
      }
 
     .Artbutton{
-      width:var(--art-size); height:var(--art-size);
+
+      width:var(--art-size); height: var(--art-size);
   
       background-color: var(--nav_bg_color_active);
+      background-image : linear-gradient(to bottom, 
+                    rgba(255,255,255, 0) 80%, 
+                    rgba(85, 10, 117, 1) 100%);
+
+background-image: -moz-radial-gradient(circle, rgba(63,94,251,0) 53%, rgba(88,0,74,1) 100%);
+background-image: -webkit-radial-gradient(circle, rgba(63,94,251,0) 53%, rgba(88,0,74,1) 100%);
+background-image: radial-gradient(circle, rgba(63,94,251,0) 53%, rgba(88,0,74,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#58004a",GradientType=1);
       color:white;
       margin-top:12px;
-      margin-left:9px;
-      margin-right:9;
-      box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
-      ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
+      margin-left:-1px;
+      margin-right:9px;
+
+      outline-color: var(--nav_bg_color_active);
+      outline-width:10px;
+      outline-style: solid;
+
       transition: all 2s ease-in-out;
       text-align: center;
 
@@ -80,11 +110,7 @@ user-select: none; /* Standard */"
       justify-content: center;
       align-items: center;
       overflow: hidden;
-    
     }
-
-    
-
 
     .Artbutton #gamebtn{
       width:var(--art-size);
@@ -138,9 +164,6 @@ user-select: none; /* Standard */"
         filter: opacity(100%);
       }
     }
-
-    
-   
 
     @-webkit-keyframes arttitle-scale-out {
       0% {
@@ -247,8 +270,8 @@ user-select: none; /* Standard */"
 
         <div style="height:10px;"></div>
   
-        <!--Art buttons 2021-->
-        <div style="width:90vw; margin: 0 auto;">
+        <!--Art buttons 2022-->
+        <div class="Art-container">
           <div class="Art-photos" id="art-button-library-2022"></div>
         </div>
 
@@ -263,34 +286,16 @@ user-select: none; /* Standard */"
         <h2 style="text-align: center; color:white; margin-top:-60px;">2021 / late 2020</h2>
         <hr style="width:20%; margin-top:-10px;">
 
-        <div style="display:flex; justify-content: center; align-items:center;">
-
-          <a style="color:white;position: relative; top:6px; background-color: var(--nav_bg_color);
-          box-shadow: 6px 6px var(--nav_bg_color_active), -6px -6px var(--nav_bg_color_active)
-          ,6px -6px var(--nav_bg_color_active),  -6px 6px var(--nav_bg_color_active);"
-            class="btn btn-info btn-lg, Showlink-button" data-toggle="modal" data-target="#Summary2021myModal">
-            <h4>Summary</h4>
-          </a>
-
-        </div>
-
         <div style="height:10px;"></div>
   
         <!--Art buttons 2021-->
-        <div style="width:90vw; margin: 0 auto;">
-          <div class="Art-photos" id="art-button-library-2021"></div>
+        <div class="Art-container">
+          <div class="Art-photos"  id="art-button-library-2021"></div>
         </div>
 
       </div>
   
 
-      <div style="height:10px;"></div>
-  
-      <!--Art buttons 2021-->
-      <div style="width:90vw; margin: 0 auto;">
-        <div class="Art-photos" id="art-button-library-2021"></div>
-      </div>
-      
     </div>
 
     <!--Art modal lists-->

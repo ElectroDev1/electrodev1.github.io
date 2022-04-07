@@ -57,6 +57,175 @@ background-color:rgb(18, 2, 66);
     background-attachment: fixed;
 }
 
+:root{
+       --art-size: 200px;
+     }
+
+     .Port-container{
+    
+     margin: 0 auto;
+     width:80vw;
+     
+     display:flex;
+     flex-wrap: wrap;
+     justify-items: center;
+     align-items: center;
+     
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+     }
+
+    .Portbutton{
+
+      width:var(--art-size); height: var(--art-size);
+  
+      background-color: var(--nav_bg_color_active);
+
+      background-image : linear-gradient(to bottom, 
+                    rgba(255,255,255, 0) 80%, 
+                    rgba(85, 10, 117, 1) 100%);
+
+background-image: -moz-radial-gradient(circle, rgba(63,94,251,0) 53%, rgba(88,0,74,1) 100%);
+background-image: -webkit-radial-gradient(circle, rgba(63,94,251,0) 53%, rgba(88,0,74,1) 100%);
+background-image: radial-gradient(circle, rgba(63,94,251,0) 53%, rgba(88,0,74,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#58004a",GradientType=1);
+
+      color:white;
+      margin-top:12px;
+      margin-left:30px;
+      margin-right:9px;
+
+      outline-color: var(--nav_bg_color_active);
+      outline-width:10px;
+      outline-style: solid;
+
+      transition: all 2s ease-in-out;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .Portbutton #gamebtn{
+      width:var(--art-size);
+      height:var(--art-size);
+      background:var(--nav_bg_color);
+      max-width:var(--art-size);max-height: var(--art-size);
+      min-width:var(--art-size);min-height: var(--art-size);
+
+      animation: artbutton-scale-out 0.1s infinite;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+
+    .Portbutton:hover #gamebtn{
+      animation: artbutton-scale-in 0.5s infinite;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      cursor:pointer;
+    }
+
+@keyframes artbutton-scale-in {
+      
+      from {
+        transform: scale(1) rotate(0deg);
+        filter: opacity(80%) blur(0px);
+      }
+      
+      to {
+        transform: scale(1.5) rotate(5deg);
+        filter: opacity(40%) blur(1px);
+      }
+    }
+
+    @keyframes artbutton-scale-out {
+      from {
+        transform: scale(1.5) rotate(5deg);
+        filter: opacity(40%) blur(1px);
+      }
+      
+      to {
+        transform: scale(1) rotate(0deg);
+        filter: opacity(80%) blur(0px);
+      }
+    }
+
+    @keyframes alpha_fade {
+      0% {
+        filter: opacity(0%);
+      }
+      100%{
+        filter: opacity(100%);
+      }
+    }
+
+    @-webkit-keyframes arttitle-scale-out {
+      0% {
+        transform: translate(0,0);
+        filter: opacity(100%);
+      }
+      
+      100% {
+        transform: translate(0, calc(var(--art-size) / 2 - 10px) );
+        filter: opacity(0%);
+      }
+    }
+
+    @-webkit-keyframes arttitle-scale-in {
+      
+      0% {
+        transform: translate(0, calc(var(--art-size) / 2 - 10px) );
+        filter: opacity(0%);
+      }
+      
+      100% {
+        transform: translate(0,0);
+        filter: opacity(100%);
+      }
+    }
+
+    .ArtTitle {
+      text-align: center;
+      position:absolute;
+      font-size:150%;
+      font-weight: bold;
+      z-index: 20;
+      transform: translate(0, calc(var(--art-size) / 2 - 10px) );
+        filter: opacity(0%);
+
+      -webkit-text-stroke: .1px #000000;
+      text-shadow: 0px 0px 10px #000000;
+    } 
+
+    .Portbutton:hover .ArtTitle{
+
+      animation: arttitle-scale-in 0.5s infinite;
+      -webkit-animation: arttitle-scale-in 0.5s infinite;
+      -moz-animation: arttitle-scale-in 0.5s infinite;
+      -ms-animation: arttitle-scale-in 0.5s infinite;
+      -o-animation: arttitle-scale-in 0.5s infinite;
+
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+
+      animation-iteration-count: 1;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+
+      cursor:pointer;
+    }
+
+
  </style>
 
     <style media="all" id="fa-madin">/*!
@@ -130,14 +299,15 @@ background-color:rgb(18, 2, 66);
     
       <div>
 
-        <h1 id="introcution" style="font-size: 140%; text-align:center; 
+        <h1 id="introduction" style="font-size: 140%; text-align:center; 
         line-height: 15px; text-shadow: 0px 0px 18px rgba(85,10,117,0.65);">
          
           I'm a <span class="yellowtext">2D/3D artist</span> and <span class="yellowtext">programmer</span><br>
           <br>Welcome to my portfolio
-
         </h1>
- 
+
+        <h2 style="text-align:center; text-decoration:underline;">Social media links</h2>
+  
         <!--Social buttons-->
         <div class="social-container">
 
@@ -178,40 +348,44 @@ background-color:rgb(18, 2, 66);
     <div id="Portofolio-tab">
      
 
-      <h2 style="font-size: 400%; text-align: center; margin-top:15px; padding: 5px 0px;" class="HeaderText">PORTFOLIOS</h2>
+      <h2 style="font-size: 400%; text-align: center; margin-top:15px;" class="HeaderText">PORTFOLIOS</h2>
+    <div class="Art-photos" style="margin-top:-50px;">
+      <div class="Port-container">
 
-      <div class="Commission-photos">
-
-        <div> <!--Games-->
-          <a href="https://electrodev1.github.io/games" style="width:100%; position:relative; bottom:1.5em;">
-            <img src="ASSETS/MISC/games_button.png" alt="Games page">
+        <div class="Portbutton" > <!--Art-->
+          <a class="ArtTitle" >Art portfolio</a>
+          <a  href="https://electrodev1.github.io/art" >
+            <img id="gamebtn" src="ASSETS/MISC/art_button.png" alt="Art page">
           </a>
           
         </div>
 
-        <div> <!--Art-->
-          <a href="https://electrodev1.github.io/art" style="width:100%; position:relative; bottom:1.5em;">
-            <img src="ASSETS/MISC/art_button.png" alt="Art page">
+        <div class="Portbutton" > <!--Games-->
+          <a class="ArtTitle" >Games/software<br>portfolio</a>
+          <a  href="https://electrodev1.github.io/games">
+            <img id="gamebtn" src="ASSETS/MISC/games_button.png" alt="Games page">
           </a>
           
         </div>
 
-        <div> <!--Music-->
-          <a href="https://electrodev1.github.io/music" style="width:100%; position:relative; bottom:1.5em;">
-            <img src="ASSETS/MISC/music_button.png" alt="Music page">
+        <div class="Portbutton" > <!--Music-->
+          <a class="ArtTitle" >Music portfolio</a>
+          <a  href="https://electrodev1.github.io/music">
+            <img id="gamebtn" src="ASSETS/MISC/music_button.png" alt="Music page">
           </a>
           
         </div>
 
         
       </div>
+    </div>
 
     </div>
 
     <!--About-->
     <div class="About-tab">
    
-      <hr style="width:60%; margin-top: 30px; ">
+      <hr style="width:60%; margin-top: 50px; ">
       <h2 style="font-size: 400%; text-align: center; justify-content: center; align-items: center; margin-top:-0px;"
       class="HeaderText"
       >

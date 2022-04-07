@@ -393,16 +393,8 @@ margin: 15px 0;
   align-items: center;
   text-align: center;
    margin: 0 auto;
-  display:flex;
-  flex-flow: row wrap;
-  margin-top:-10px;
-
-
-  width:fit-content;
-
-
-  padding: 20px 0;
-  height : 100%;
+   display:flex;
+   flex-wrap: wrap;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
@@ -435,11 +427,6 @@ margin: 15px 0;
    100%{
      filter: opacity(100%);
    }
-}
-
-.Art-photos input:hover{
-  transform: rotate(10deg);
-  transform: scale(1.2) rotate(5deg);
 }
 
 
@@ -543,8 +530,8 @@ user-select: none; /* Standard */
 
 /*Showlink buttons*/
 .Showlink-button{
-  display: inline-block;
-  text-align:left;
+  display: none;
+  text-align:center;
   color:white;
   text-decoration: none;
   padding:0px 30px;
@@ -558,10 +545,12 @@ user-select: none; /* Standard */
   margin:0 5%;
   box-shadow: 4px 4px var(--nav_bg_color_active), -4px -4px var(--nav_bg_color_active)
   ,4px -4px var(--nav_bg_color_active),  -4px 4px var(--nav_bg_color_active);
+  transition: all .06s ease-in-out;
+  height:0; width:0;
 }
 
 .Showlink-button:hover{
-  transform: scale(1.05, 1.05);
+  transform: scale(1.2, 1.2);
   cursor: pointer;
 }
 
