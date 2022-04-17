@@ -47,27 +47,8 @@ body {
 
 h1, h2, h3, hr, footer, p, ul, li, img{ color: white;}
 
-ul {
-  list-style: none; /* Remove default bullets */
-}
 
-li::before {
-  background-image:url("/ASSETS/MISC/li.png");
 
-  content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: white; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  /* Needed to add space between the bullet and the text */
-  /* Also needed for space (tweak if needed) */
-}
-
-li{
-background-size: 10px;  
-background-repeat: no-repeat;
-background-position: 0px 5px;
-padding-left: 1em;
-margin: 15px 0;
-}
 
 @media screen and (min-width: 1199px) {
 
@@ -530,7 +511,7 @@ user-select: none; /* Standard */
 
 /*Showlink buttons*/
 .Showlink-button{
-  display: none;
+
   text-align:center;
   color:white;
   text-decoration: none;
@@ -545,8 +526,8 @@ user-select: none; /* Standard */
   margin:0 5%;
   box-shadow: 4px 4px var(--nav_bg_color_active), -4px -4px var(--nav_bg_color_active)
   ,4px -4px var(--nav_bg_color_active),  -4px 4px var(--nav_bg_color_active);
-  transition: all .06s ease-in-out;
-  height:0; width:0;
+  transition: all .03s ease-in-out;
+
 }
 
 .Showlink-button:hover{

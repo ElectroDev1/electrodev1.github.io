@@ -42,6 +42,29 @@ user-select: none; /* Standard */"
        --art-size: 200px;
      }
 
+     ul {
+      list-style: none; /* Remove default bullets */
+    }
+
+     li::before {
+      background-image:url("/ASSETS/MISC/li.png");
+
+      content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: white; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      /* Needed to add space between the bullet and the text */
+      /* Also needed for space (tweak if needed) */
+      }
+
+      li{
+      background-size: 10px;  
+      background-repeat: no-repeat;
+      background-position: 0px 5px;
+      padding-left: 1em;
+      margin: 15px 0;
+      }
+
+
       .Commission-photos {
          justify-content: center;
          align-items: center;
