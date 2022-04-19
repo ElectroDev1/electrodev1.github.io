@@ -25,7 +25,7 @@ function get_userdata(name,text,imgID,nameID) {
         console.log("One or more arguments have not been set!"); return; 
      }
 
-     console.log("Getting user "+name+"'s information")
+     console.log("Getting "+name+"'s information")
 
      //Loop through all class elements
      for(var a=0; a<username.length; a++){
