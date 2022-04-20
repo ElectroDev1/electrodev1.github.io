@@ -3,6 +3,7 @@
 <head>
     
     <!--embed-->
+    <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#f0d909">
     <meta property="og:title" content="Electro⚡ - Pretty big site update">
     <meta property="og:description" content="">
