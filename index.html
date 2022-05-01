@@ -228,6 +228,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       cursor:pointer;
     }
 
+    div,img,a,p,h1,h2,h4,hr{display:none;}
+
 
  </style>
 
@@ -274,7 +276,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
   </head> 
 
   <!--Body-->
-  <body>
+  <body style="content:none;">
 
     
     <!--Title-->
@@ -458,6 +460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
     return str.substring(0, index) + stringToAdd + str.substring(index, str.length);
     }
   
+    window.location.replace("https://electrodev1.github.io/home");
 
       //Change age in the about me part
       var _id = document.getElementById("about_description");

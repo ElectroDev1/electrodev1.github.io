@@ -17,7 +17,7 @@ $(function() {
               document.documentElement.style.setProperty('--nav_bg_color_active', '#f0d909');    
               document.documentElement.style.setProperty('--nav_bg_color_selected', '#f0d909');
               document.body.style.backgroundImage = 
-              "radial-gradient(circle, rgba(85,10,117,0.65) 20%, rgba(51,6,71,1) 80%, rgba(51,6,71,1) 81%),url('/ASSETS/bkg.png')"; 
+              "radial-gradient(circle, rgba(85,10,117,0.7) 20%, rgba(51,6,71,1) 80%, rgba(51,6,71,1) 100%),url('/ASSETS/LOGOS/electro_title_bkg3.png')"; 
               break;
    
               case 9://Halloween
