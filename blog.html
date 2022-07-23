@@ -1,214 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    
-    <!--embed-->
-    <meta name="theme-color" content="#f0d909">
-    <meta property="og:title" content="Electro⚡ - Blogs">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#FFE300">
+    <meta property="og:title" content="Electro⚡ - Blog">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://electrodev1.github.io/blog">
-    <meta property="og:image" content="https://electrodev1.github.io/ASSETS/LOGOS/afe.png">
-    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
-    <meta name="viewport" content="width=1000">
+    <meta property="og:url" content="https://electrodev1.github.io/">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@EIectroDev" />
     <meta name="twitter:creator" content="@EIectroDev" />
-    
-    <!--Get various things-->
-    <script src="JS/jquey.js"></script> 
-    <script src="JS/portfolio_J.js"></script> 
+
+    <title>Electro - Blog</title>
+    <link rel="icon" id="site-icon" href="">
+
+    <script src="\Code\jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="CSS\module.css">
-    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 
-    <script> 
+    <link rel="stylesheet" href="\Code\style.css">
 
-      $(function(){ $("#navbar-library").load("LIBRARIES/navbar.html"); });
-      $(function(){ $("#footer").load("LIBRARIES/footer.html"); });
-      $(function(){ $("#blog-buttons").load("LIBRARIES/blog_button_library.html"); });
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script>
+        $(function () { $(".navbar").load("navbar.html"); });
+        $(function () { $(".modal-blogs").load("/Modals/blogs.html"); });
     </script>
 
-    <title>Electro - Blogs</title>
-    <link rel="icon" id="site-icon" href="ASSETS/LOGOS/afe.png">
-
-    <!--Background-->
-    <style>
-
-        :root{
-        --nav_bg_color: #333;
-        --nav_bg_color_active: #f0d909;
-        --nav_bg_color_selected: #f0d909;
-        --nav_txt_color: white;
-        --nav_txt_color_active: black;
-        --border-width: 7px;
-        --ng-invert0: 0;
-        --ng-invert1: 0;
-
-        --blog-width: 70vw;
-        --blog-height: 200px;
-
-        --img-size : 175px;
-
-        --textblog-height : calc( var(--blog-height) - 125px );
-        }
-
-        body {
-    
-          font-family: Arial, Helvetica, sans-serif;
-          background-color: black;
-          background-color:rgb(18, 2, 66);
-          background-image: linear-gradient(rgba(51, 6, 71, 0.6) 10%,rgba(85, 10, 117, 1) 120%), url('ASSETS/bkg.png');
-          background-size:cover;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-    
-       }
-
-       .Blog-tab {
-           
-           background: var(--nav_bg_color);
-
-           -webkit-user-select: text; /* Safari */        
-            -moz-user-select: text; /* Firefox */
-            -ms-user-select: text; /* IE10+/Edge */
-            user-select: text; /* Standard */
-
-           width: var(--blog-width);
-           height: var(--blog-height);
-
-           margin:0 auto;
-           
-
-           box-shadow: 10px 10px var(--nav_bg_color_active), -10px -10px var(--nav_bg_color_active)
-           ,10px -10px var(--nav_bg_color_active),  -10px 10px var(--nav_bg_color_active);
-
-           display:flex;
-           overflow: hidden;
-       }
-
-       .blog-header-img{
-          max-height:var(--img-size);
-          max-width: var(--img-size);
-          min-width: var(--img-size);
-          min-height:var(--img-size);
-
-          position: relative;
-          top:12px; left:10px;
-       }
-
-       .blogtextcontent{
-        position: relative;
-         margin-left:10px;
-         height:auto;
-         min-width:calc(var(--blog-width) - 175px - 12px);
-       }
-
-       .blog-title{
-        font-size:200%;
-        color:white;
-        margin: 10px;
-       }
-
-       .blog-link{
-        color:white;
-        text-decoration: none;
-       }
-
-       .blog-link:hover{
-        text-decoration: underline !important;   
-       }
-
-       .blog-line{
-        width: 522px;
-        max-width: 30vw;
-        height: 47px;
-        margin: 10px;
-        border-bottom: 3px solid white;
-        margin-top:-50px;
-        }
-
-        .blog-desc{
-        margin:10px;
-        font-size: auto;
-
-        min-height: var(--textblog-height);
-        max-height: var(--textblog-height);
-        overflow: hidden;
-        }
-
-        .author{
-        display:flex;
-        color:white;
-        margin:12px;
-           
-        font-size:120%;
-        
-        position:absolute;
-        left:-5px;
-        right:15px;
-        bottom: 0;
-        top: calc(var(--blog-height) - 62px);
-        height:auto;
-        }
-
-
-        
-        .username{
-        position: relative;
-        bottom:12px;
-        }
-
-        .pfp{
-            width:100px; height:100px;
-        transform: scale(0.45,0.45);
-        margin-top: -28px;
-        margin-left: -20px;
-        border-radius: 50%;
-        }
-           
-
-    </style>
-
-    <link href="jquery.js">
-    <link rel="stylesheet" type="text/css" href="CSS/portfolio_C.css"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
-
-    <!--Navigation bar-->
-    <div id="navbar-library"></div>
-    <div style="
-    height:6em;
-
-    @media screen and (max-width: 600px) {
-     height:10em !important;
-    }
-    
-    ">
-    
-    </div>
 
 </head>
-<body>
-    
-    <div>
 
-        <div style="height:1em;"></div>
-       
-        <h1 style="font-size: 400%; text-align: center; margin-top:2px; position:relative; top:10px" class="HeaderText">BLOGS</h1>  
-  
-        <hr style="width:80vw; margin-top:-30px;">
-       
+<body>
+
+
+    <div class="home-backdrop" style="height:0;">
+
+        <div class="home-backdrop-wrapper">
+
+            <div class="home-backdrop-elements">
+
+                <div style="text-align:center; position:relative; top:20px;">
+                    <p class="home-backdrop-myname">BLOG</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="navbar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="top-bar"></div>
+    <div class="bottom-bar"></div>
+
+
+
+
+    <div class="site-content">
+
+        <div style="display:flex; justify-content:center;">
+            <h1 style=" user-select: none;color:white; text-align:center; margin:5px auto; font-size:2em;">
+                BLOG & UPDATES
+            </h1>
+        </div>
+
+        <div class="blog-button-container">
+
+            <div class="blog-button modal-open" openmodal="modal-b-newsite">
+
+                <div class="blog-button-title-bkg">
+
+                    <p class="blog-button-title">
+                        A FRESH RESTART
+                    </p>
+
+                </div>
+
+                <div class="blog-button-content">
+                    <p class="blog-button-text">
+                        The site has been completely rewritten from scratch, new pages, new features, new everything!
+                    </p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="site-footer">
+            <p>Electro 2022</p>
+        </div>
+
     </div>
 
-    <!--Example blog header-->
-    <div id="blog-buttons"></div>
+    <div class="modal-blogs"></div>
 
-    <div id="sidebars-left"></div>
-    <div id="sidebars-right"></div>
-
-    <div id="footer" style="margin-top:206px;"></div>
+    <script src="\Code\script.js"></script>
 
 </body>
+
 </html>
+
+<!--
+     <button class="modal-open"  openmodal="modal-2">
+        Click me to open the modal
+        </button>
+-->

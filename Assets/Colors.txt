@@ -1,0 +1,12 @@
+Black         - #000000
+White         - #FFFFFF
+Bright Yellow - #FFE300
+Yellow        - #FFCF00
+Dark Yellow   - #FFB300
+Orange        - #FF7E00
+Bright Purple - #B266E3
+Purple        - #7E46BB
+Dark Purple   - #4E228E
+Bright Gray   - #D3D3D3
+Gray          - #6A717B
+Dark Gray     - #364252
