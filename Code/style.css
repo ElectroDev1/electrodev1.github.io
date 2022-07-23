@@ -7,19 +7,25 @@ html {
 */
 @font-face {
 
-    font-family: 'Renogare' sans-serif;
-    src: url('/fonts/renogare/Renogare-Regular.otf');
-    src: url('/fonts/renogare/Renogare-Regular.eot');
-    src: url('/fonts/renogare/Renogare-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/renogare/Renogare-Regular.woff2') format('woff2'),
-        url('/fonts/renogare/Renogare-Regular.woff') format('woff'),
-        url('/fonts/renogare/Renogare-Regular.ttf') format('truetype'),
-        url('/fonts/Renogare/Renogare-Regular.svg#Renogare-Regular') format('svg');
+    font-family: 'Renogare_site';
+    
+    src: 
+        url('fonts/renogare/Renogare-Regular.otf') format("opentype"),
+        url('fonts/renogare/Renogare-Regular.eot'),
+        url('fonts/renogare/Renogare-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/renogare/Renogare-Regular.woff2') format('woff2'),
+        url('fonts/renogare/Renogare-Regular.woff') format('woff'),
+        url('fonts/renogare/Renogare-Regular.ttf') format('truetype'),
+        url('fonts/Renogare/Renogare-Regular.svg#Renogare-Regular') format('svg');
+
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 
-    font-family: 'Inconsolata' arial;
+}
+
+@font-face{
+    font-family: 'Inconsolata_site';
     src: url('/fonts/inconsolata/Inconsolata-Regular.eot');
     src: url('/fonts/inconsolata/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
         url('/fonts/inconsolata/Inconsolata-Regular.woff2') format('woff2'),
@@ -29,16 +35,8 @@ html {
     font-weight: normal;
     font-style: normal;
     font-display: swap;  
-   
 }
 
-@font-face {
-    font-family: "CustomFont";
-    src: url("CustomFont.eot");
-    src: url("CustomFont.woff") format("woff"),
-    url("CustomFont.otf") format("opentype"),
-    url("CustomFont.svg#filename") format("svg");
-}
 
 /*----------------------------------------------------------------
    General variables
@@ -70,7 +68,7 @@ html {
    Body setup
 */
 body {
-    font-family: 'Renogare';
+    font-family: 'Renogare_site';
     letter-spacing: 0.5px;
     margin: 0 auto;
     width: 100%;
@@ -857,7 +855,7 @@ h1 {
 }
 
 .home-backdrop-p1 {
-    font-family: 'inconsolata', sans-serif;
+    font-family: 'Inconsolata_site', sans-serif;
     font-size: 3vw;
     margin: 0;
 
@@ -919,7 +917,7 @@ h1 {
 }
 
 .typewritten {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Inconsolata_site', sans-serif;
     font-size: 3vw;
 
     overflow: hidden;
@@ -1372,7 +1370,7 @@ Game buttons
 }
 
 .skill-field p {
-    font-family: 'Inconsolata';
+    font-family: 'Inconsolata_site';
     font-size: 1.25em;
     text-align: center;
 }
@@ -1551,7 +1549,7 @@ Game buttons
 }
 
 .blog-button-text {
-    font-family: 'Inconsolata'; user-select: none;
+    font-family: 'Inconsolata_site'; user-select: none;
 }
 
 .blog-button:hover {
@@ -1606,7 +1604,7 @@ Game buttons
 
 .modal-maintext {
     text-align: center;
-    font-family: 'Inconsolata';
+    font-family: 'Inconsolata_site';
     margin-bottom: 0;
     font-size: 1.25em;
 }
