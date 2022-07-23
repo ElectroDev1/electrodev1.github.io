@@ -6,13 +6,38 @@ html {
    Load Renogare font
 */
 @font-face {
-    font-family: 'Renogare' sans-serif;
-    /*a name to be used later*/
-    src: url('/Assets/Renogare-Regular.otf');
-    /*URL to font*/
-    src: url('/Assets/inconsolata.regular.ttf');
-    /*URL to font*/
 
+    font-family: 'Renogare' sans-serif;
+    src: url('/Assets/Renogare/Renogare-Regular.otf');
+    src: url('/Assets/Renogare/Renogare-Regular.eot');
+    src: url('/Assets/Renogare/Renogare-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/Assets/Renogare/Renogare-Regular.woff2') format('woff2'),
+        url('/Assets/Renogare/Renogare-Regular.woff') format('woff'),
+        url('/Assets/Renogare/Renogare-Regular.ttf') format('truetype'),
+        url('/Assets/Renogare/Renogare-Regular.svg#Renogare-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+    font-family: 'Inconsolata' arial;
+    src: url('/Assets/Inconsolata/Inconsolata-Regular.eot');
+    src: url('/Assets/Inconsolata/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/Assets/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
+        url('/Assets/Inconsolata/Inconsolata-Regular.woff') format('woff'),
+        url('/Assets/Inconsolata/Inconsolata-Regular.ttf') format('truetype'),
+        url('/Assets/Inconsolata/Inconsolata-Regular.svg#Inconsolata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;  
+   
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+    url("CustomFont.otf") format("opentype"),
+    url("CustomFont.svg#filename") format("svg");
 }
 
 /*----------------------------------------------------------------
