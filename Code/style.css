@@ -671,7 +671,7 @@ h1 {
 
 .modal-header {
     border-bottom: 3px solid var(--color-black);
-    padding: var(--navbar-padding);
+    padding: calc( var(--navbar-padding) + 8px);
 }
 
 .modal-header>h1 {
