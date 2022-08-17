@@ -88,6 +88,15 @@ h1 {
     user-select: none;
 }
 
+.normal-link{
+    transition:all 0.2s;
+    color: var(--color-b-yellow);
+}
+
+.normal-link:hover{
+    color: var(--color-b-purple);
+}
+
 /*----------------------------------------------------------------
    Cover bars
 */
