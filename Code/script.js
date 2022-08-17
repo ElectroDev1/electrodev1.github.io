@@ -100,7 +100,7 @@
                     var _videochildren = _mybody.children[1].getElementsByTagName("video");
 
                     for (var j = 0; j < _videochildren.length; j++){
-                        _videochildren[j].play();
+                        //_videochildren[j].currentTime = 0.5;
                     }
 
                 }
