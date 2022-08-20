@@ -223,8 +223,12 @@
     for (var i = buttons.length - 1; i >= 0; i--) {
 
 
+        var _btn = buttons[i];
 
-        buttons[i].onclick = switchactive;
+        if(_btn.className!="navbar-button-inactive"){
+            _btn.onclick = switchactive;
+        }
+
 
     }
 
@@ -249,4 +253,5 @@ for (var o = links.length - 1; o >= 0; o--) {
 
 var footer = document.getElementsByClassName('site-footer');
 for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro 2022'; }
+
 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#FFE300">
+    <meta property="og:title" content="Spring Escape">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://electrodev1.github.io/Assets/Game media/Spring Escape/icon.png">
+    <meta property="og:url" content="https://electrodev1.github.io/spring-escape">
+    <meta name="twitter:card" content="summary" >
+    <meta name="twitter:site" content="@EIectroDev" >
+    <meta name="twitter:creator" content="@EIectroDev" >
+
+    <title>Spring Escape</title>
+    <link rel="icon" id="site-icon" href="/Assets/Game media/Spring Escape/icon.png">
+
+    <script src="\Code\jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="\Code\style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(function () { $(".navbar").load("navbar_SE.html"); });
+    </script>
+
+    <style>
+        :root{
+            --color-b-yellow: #00FF64;
+            --color-b-purple: #FF4CA5;
+            --color-purple: #BC2582;
+            --color-gray: #4C4F8A;
+            --color-d-gray: #2C2E5E;
+            --color-dd-gray: #180D2F;
+        }
+
+        .sageButton{
+            position:relative; top:-10%;
+             filter: invert(42%) sepia(93%) saturate(502%) hue-rotate(87deg) brightness(119%) contrast(119%) drop-shadow(0px 0px 10px rgb(0, 0, 0));
+            margin:0 auto;
+            transition:all 0.1s;
+            max-width: 100%;
+        }
+
+        .sageButton:hover,.sageButton-small:hover{
+           
+            transform:scale(1.05);
+            filter: invert(42%) sepia(93%) saturate(502%) hue-rotate(187deg) brightness(69%) contrast(119%) drop-shadow(0px 0px 10px rgb(0, 0, 0));
+            cursor: pointer ;
+        }
+
+        .sageButton:active,.sageButton-small:active{
+           
+           transform:scale(0.95);
+           filter: invert(42%) sepia(93%) saturate(502%) hue-rotate(187deg) brightness(69%) contrast(119%) drop-shadow(0px 0px 10px rgb(0, 0, 0));
+           cursor: pointer ;
+       }
+
+       .sageButton-small{
+            position:relative;
+             filter: invert(42%) sepia(93%) saturate(502%) hue-rotate(87deg) brightness(119%) contrast(119%) ;
+            margin:0 auto;
+            transition:all 0.1s;
+            max-width: 100%;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="home-backdrop" style="background-image:url('/Assets/banner_style_empty_SE.png');">
+
+        <div class="home-backdrop-wrapper">
+
+            <div class="home-backdrop-elements" style="display:flex; justify-content:center; align-items:center">
+
+                <div style="text-align:center; position:relative; top:20px; ">
+                    <p class="home-backdrop-myname" style="font-size: 8vw;">SPRING<br>ESCAPE</p>
+
+                </div>
+
+                <div style="width:25%; margin-left:0px; position:relative; left:2%; display:block;">
+                    
+                    <p style="font-size:2vw; line-break:none;text-align:center;" ><span class="highlight-wavec">Check the demo at</span></p>
+                   
+                    <a href="https://sonicfangameshq.com/forums/showcase/spring-escape-sage-2022-demo.1290/" style="width:90%; position:relative; top:-1vw;">
+                        <div style="width:100%; height:100%; display:flex; align-items:center;">
+                            <img src="/Assets/Game media/Spring Escape/SAGE22LOGOTEXTONLYWHITE.png" class="sageButton">
+                                                       
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="navbar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="top-bar"></div>
+    <div class="bottom-bar"></div>
+
+
+    <div class="site-content">
+
+        <div style="display:flex; justify-content:center;">
+            <h1 id="about" style="user-select: none;color:white; text-align:center; margin:5px auto; font-size:4em;">
+                ABOUT
+            </h1>
+        </div>
+
+        <div style="display:flex; justify-content:center;  user-select: none;">
+            
+            <div style="width:52%; float:left; word-wrap: break-word;" class="aboutme-text">
+                <p style="font-family:'Inconsolata_site'; font-size:1.5em; line-height:1.2em;">
+                    Spring Escape is a 2D platformer created by <span class="highlight">Electro</span>, with music by
+                    <span class="highlight">bouncytorch</span>, where you take control of a little patch of dirt and dig your
+                    way through various obstacle-filled levels.<br> Hide from deadly cameras, avoid pesky drills, and so much more.
+                </p>
+            </div>
+
+            <div class="aboutme-img" style="width:50%; float:right;">
+                <div style="display:flex; position:relative; left:9vw; width:20%; min-width:200px; align-items:center; justify-content:center">
+                    <img src="/Assets/Game media/Spring Escape/patchy.png" style="width:100%; ">
+                    <img src="/Assets/Game media/Spring Escape/camera.png" style="width:100%; position:relative; left:5vw;">
+                </div>
+            </div>
+            
+        </div>
+
+        <div style="display:flex; justify-content:center;  user-select: none;">
+  
+            <div class="aboutme-img" style="width:50%; float:right;">
+                <div style="display:flex; position:relative; left:9vw; width:20%; min-width:200px; align-items:center; justify-content:center">
+                    <img src="/Assets/Game media/Spring Escape/flower.png" style="width:100%; ">
+                    <img src="/Assets/Game media/Spring Escape/zap.png" style="width:100%; position:relative; left:5vw;">
+                </div>
+            </div>
+            
+            <div style="width:52%; float:left; word-wrap: break-word;" class="aboutme-text">
+                <p style="font-family:'Inconsolata_site'; font-size:1.5em; line-height:1.2em;">
+                    Alongside the main campaign, the game also features collectibles that let you unlock <span class="highlight">even harder challenges</span>,
+                    a <span class="highlight">speedrun mode</span> for the fastest of players, and a lot of options to customize the game to your liking.
+                </p>
+            </div>
+
+          
+            
+        </div>
+
+        <hr>
+
+        <div style="display:flex; justify-content:center;">
+            <h1 id="media" style="user-select: none;color:white; text-align:center; margin:5px auto; font-size:4em;">
+                MEDIA
+            </h1>
+        </div>
+
+        <hr>
+
+        <div style="display:flex; justify-content:center;">
+            <h1 id="demo" style="user-select: none;color:white; text-align:center; margin:5px auto; font-size:4em;">
+                DEMO
+            </h1>
+        </div>
+        <p style="text-align:center; font-family: 'Inconsolata'; font-size:1.5em; line-height:1.2em; user-select: none; text-align:center;">
+            Check out the game's demo, which includes the first 4 levels and speedrun mode!
+        </p>
+
+        <div style="display:flex; justify-content:center; margin:20px auto; margin-bottom: 30px;">
+            <a href="https://sonicfangameshq.com/forums/showcase/spring-escape-sage-2022-demo.1290/" style="width:30%; min-width:80px; margin:0 7%;">
+                <div style="width:100%; height:100%; display:flex; align-items:center;">
+                    <img src="/Assets/Game media/Spring Escape/SAGE22LOGOTEXTONLYWHITE.png" class="sageButton-small">
+                </div>
+            </a>  
+            <a href="https://electrodev.itch.io/spring-escape-sage-2022-demo" style="width:30%; min-width:80px; margin:0 7%;">
+                <div style="width:100%; height:100%; display:flex; align-items:center;">
+                    <img src="/Assets/Game media/Spring Escape/large.png" class="sageButton-small">
+                </div>
+            </a>         
+        </div>
+
+                <div class="site-footer">
+                    <p>Electro 2022</p>
+                </div>
+
+    </div>
+
+
+    <script src="\Code\script.js"></script>
+
+</body>
+
+</html>
+
+<!--
+     <button class="modal-open"  openmodal="modal-2">
+        Click me to open the modal
+        </button>
+-->
