@@ -1129,6 +1129,7 @@ Game buttons
     right: 1.25%;
     justify-content: center;
     flex-flow: row wrap;
+    user-select: none;
     height: max-content;
 }
 
@@ -1428,6 +1429,19 @@ Game buttons
 
 }
 
+.art-video {
+  
+
+    width: 100%; 
+    position:relative;
+    top:20px;
+    margin-bottom:20px;
+    transform:scale(1);
+    box-shadow: 0 0 10px 5px var(--color-black);
+
+}
+
+
 @media only screen and (max-width:780px) {
     .art-column {
         flex: 40%;
@@ -1608,6 +1622,10 @@ Game buttons
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+.responsive-iframe:hover{
+    cursor: pointer;
 }
 
 .modal-maintext {
