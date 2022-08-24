@@ -1433,6 +1433,7 @@ Game buttons
   
 
     width: 100%; 
+    height:auto;
     position:relative;
     top:20px;
     margin-bottom:20px;
