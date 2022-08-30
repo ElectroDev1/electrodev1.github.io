@@ -70,6 +70,20 @@
             max-width: 100%;
         }
 
+        a {text-decoration:none;}
+
+        .highlight, a {
+            transition: all 0.1s;
+
+            color: var(--color-b-yellow);
+            text-decoration: none;
+        }
+
+        .highlight :hover, a :hover{
+            color: var(--color-b-purple);
+            font-size:1.05em;
+        }
+
 
     </style>
 
@@ -89,7 +103,7 @@
 
                 <div style="width:25%; margin-left:0px; position:relative; left:2%; display:block;">
                     
-                    <p style="font-size:2vw; line-break:none;text-align:center;" ><span class="highlight-wavec">Check the demo at</span></p>
+                    <p style="font-size:2vw; line-break:none;text-align:center;" ><span class="highlight-wavec" > Check the demo at</span></p>
                    
                     <a href="https://sonicfangameshq.com/forums/showcase/spring-escape-sage-2022-demo.1290/" style="width:90%; position:relative; top:-1vw;">
                         <div style="width:100%; height:100%; display:flex; align-items:center;">
@@ -104,17 +118,18 @@
         </div>
 
     </div>
-    <div class="navbar"></div>
+    <div class="navbar" ></div>
     <div class="left-bar"></div>
     <div class="right-bar"></div>
     <div class="top-bar"></div>
-    <div class="bottom-bar"></div>
+    <div class="bottom-bar" ></div>
 
+    <div  id="about" style="position:relative; bottom:80px;"></div>
 
-    <div class="site-content">
+    <div class="site-content" >
 
         <div style="display:flex; justify-content:center;">
-            <h1 id="about" style="user-select: none;color:white; text-align:center; margin:5px auto; font-size:4em;">
+            <h1 style="user-select: none;color:white; text-align:center; margin:5px auto; font-size:4em;">
                 ABOUT
             </h1>
         </div>
@@ -123,8 +138,8 @@
             
             <div style="width:52%; float:left; word-wrap: break-word;" class="aboutme-text">
                 <p style="font-family:'Inconsolata_site'; font-size:1.5em; line-height:1.2em;">
-                    Spring Escape is a 2D platformer created by <span class="highlight">Electro</span>, with music by
-                    <span class="highlight">bouncytorch</span>, where you take control of a little patch of dirt and dig your
+                    Spring Escape is a 2D platformer created by <a href="https://twitter.com/EIectroDev" target="_blank"><span class="highlight">Electro</span></a>, with music by
+                    <a href="https://twitter.com/bouncytorch" target="_blank"><span class="highlight">bouncytorch</span></a>, where you take control of a little patch of dirt and dig your
                     way through various obstacle-filled levels.<br> Hide from deadly cameras, avoid pesky drills, and so much more.
                 </p>
             </div>
@@ -150,7 +165,9 @@
             <div style="width:52%; float:left; word-wrap: break-word;" class="aboutme-text">
                 <p style="font-family:'Inconsolata_site'; font-size:1.5em; line-height:1.2em;">
                     Alongside the main campaign, the game also features collectibles that let you unlock <span class="highlight">even harder challenges</span>,
-                    a <span class="highlight">speedrun mode</span> for the fastest of players, and a lot of options to customize the game to your liking.
+                    a <span class="highlight">speedrun mode</span> for the fastest of players, and a lot of options to customize the game to your liking.<br><br>
+                    Follow the game's <a href="https://twitter.com/spring_escape_" target="_blank"><span class="highlight">Twitter account</a></span>
+                    <br>Join the <a href="https://discord.gg/KRfvxPTtP7" target="_blank"><span class="highlight">Discord server</a></span>
                 </p>
             </div>
 
