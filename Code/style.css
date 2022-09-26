@@ -94,7 +94,7 @@ h1 {
 }
 
 .normal-link:hover{
-    color: var(--color-b-purple);
+    color: var(--color-b-purple) !important;
 }
 
 /*----------------------------------------------------------------
