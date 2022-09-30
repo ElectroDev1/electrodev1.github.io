@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#FFE300">
+    <meta property="og:title" content="Electro⚡ - Spring Escape announcement + future project">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://electrodev1.github.io/Assets/site_icon.png">
+    <meta property="og:url" content="https://electrodev1.github.io/Blogs/spring_escape_announcement_plus_future_projects">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@EIectroDev" />
+    <meta name="twitter:creator" content="@EIectroDev" />
+
+    <title>Electro - Spring Escape announcement plus future projects</title>
+    <link rel="icon" id="site-icon" href="/Assets/site_icon.png">
+
+    <script src="\Code\jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="\Code\style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(function () { $(".navbar").load("/navbar.html"); });
+        $(function () { $(".modal-blogs").load("/Modals/blogs.html"); });
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div class="home-backdrop" style="height:0;">
+
+        <div class="home-backdrop-wrapper">
+
+            <div class="home-backdrop-elements">
+
+                <div style="text-align:center; position:relative; top:20px;">
+                    <p class="home-backdrop-myname"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="navbar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="top-bar"></div>
+    <div class="bottom-bar"></div>
+
+
+
+
+    <div class="site-content">
+
+        <div style="display:flex; justify-content:center;">
+            <h1 style=" user-select: none;color:white; text-align:center; margin:5px auto; font-size:2em;">
+                A SMALL GAMEMAKING JOURNEY
+            </h1>
+        </div>
+        <p style="text-align:center; font-family:'Inconsolata_site';
+        margin:0;
+        ">
+            30/09/2022
+        </p>
+        <p style="font-family:'Inconsolata'; font-size:1.2em; line-height:1.2em;">
+            After releasing the demo of my latest game, Spring Escape, I decided to spend some time learning Gamemaker features that I've been
+            putting on the learning backlog for a long while in the hopes of using them to make my games even better. Here's a list of what I've
+            learned so far:
+            <br>
+        </p>
+
+        <h2 style="color:white;">3D in Gamemaker</h2>
+        <p style="font-family:'Inconsolata'; font-size:1.2em; line-height:1.2em;">
+            3D in Gamemaker has always been something that has fascinated me ever since I was making stuff in 8.1, the fact people can take an engine
+            that offers so little tools for making those kind of games easily is amazing, and I wanted to try it too.<br>
+            I followed DragoniteSpam's <a class="normal-link" href="https://www.youtube.com/playlist?list=PL_hT--4HOvrcML9uqHe4fwBVTm650Vy3V">3D in Gamemaker series</a>
+            to understand the basics and so far I managed to get a very simple character controller and some basic models working.
+        </p>
+        <div style="width:100%; display:flex; align-items:center; justify-content:center;">
+            <video style="width:75%; min-width:200px; max-width:600px;  height:auto; " controls src="/Assets/Blog assets/Gamemaking journey/3D_video.mp4"></video>
+        </div>
+        <p style="font-family:'Inconsolata'; font-size:1.2em; line-height:1.2em;">
+            In the future I will explore more 3D related things like collisions, I really want to make some kind of little game with this.
+        </p>
+
+        <h2 style="color:white;">Shaders</h2>
+        <p style="font-family:'Inconsolata'; font-size:1.2em; line-height:1.2em;">
+            I already knew some of the basics of shaders, but only really how to make a sprite turn completely white, and for most of the time
+            I would just use other people's shaders and hope that they worked correctly. This time I decided to learn them in depth, especially things like
+            texture samplers and coordinates, as well as learning how to make things like pallete swaps, displacement, and more.
+            I ended up making many little fun tests with them.
+        </p>
+        <div style="width:100%; display:flex; justify-content:center;">
+            <video style="width:75%; min-width:200px; max-width:600px;  height:auto; " controls src="/Assets/Blog assets/Gamemaking journey/mask_with_shader.mp4"></video>
+        </div>
+        <br>
+        <div style="width:100%; display:flex; justify-content:center;">
+            <img style="width:75%; min-width:200px; max-width:600px;  height:auto; " src="/Assets/Blog assets/Gamemaking journey/pallete.gif"></img>
+        </div>
+        <br>
+        <div style="width:100%; display:flex; justify-content:center;">
+            <img style="width:75%; min-width:200px; max-width:600px;  height:auto; " src="/Assets/Blog assets/Gamemaking journey/displacement.gif"></img>
+        </div>
+
+        <h2 style="color:white;">Buffers</h2>
+        <p style="font-family:'Inconsolata'; font-size:1.2em; line-height:1.2em;">
+            The next thing I wanted to learn was buffer, an interesting way to store data that I've never tried before. I think the best part of them is being
+            able to take color data from surfaces and easily check a color of every pixel, it lead to many interesting experiments.<br>
+            My first test was trying to recreate <a class="normal-link" href="https://twitter.com/aarthificial">aarthificial's</a>
+            "Reinvented Pixel Art Animation" system, a very interesting way of animating pixel art. While the system isn't perfect, it was still a very fun 
+            experiment.<br>
+            Then, I tried doing a small Splatoon like game in 2D, using buffers to determine how much ink each team has placed.
+        </p>
+        <div style="width:100%; display:flex; align-items:center; justify-content:center;">
+            <video style="width:75%; min-width:200px; max-width:600px;  height:auto; " controls src="/Assets/Blog assets/Gamemaking journey/RPAA.mp4"></video>
+        </div>
+        <br>
+        <div style="width:100%; display:flex; align-items:center; justify-content:center;">
+            <video style="width:75%; min-width:200px; max-width:600px;  height:auto; " controls src="/Assets/Blog assets/Gamemaking journey/splatoon.mp4"></video>
+        </div>
+  
+        <p style="font-family:'Inconsolata'; font-size:1.2em; line-height:1.2em;">
+            And this is it for what I've learned during this month, lots of interesting stuff for sure, and probably quite a lot for one month. I'll now go back to solely
+            focus on Spring Escape, but there's still a lot of Gamemaker things I still have to learn!
+        </p>
+        <br>
+
+        <div class="site-footer">
+            <p>Electro 2022</p>
+        </div>
+
+    </div>
+
+    <div class="modal-blogs"></div>
+
+    <script src="\Code\script.js"></script>
+
+</body>
+
+</html>
+
+<!--
+     <button class="modal-open"  openmodal="modal-2">
+        Click me to open the modal
+        </button>
+-->
