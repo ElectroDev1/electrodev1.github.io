@@ -1,0 +1,43 @@
+:root {
+    --color-black: black;
+    --color-white: white;
+    --color-b-yellow: #FD7D01;
+    --color-yellow: #FF6601;
+    --color-d-yellow: #FF5601;
+    --color-orange: #FF4001;
+    --color-b-purple: #8F2592;
+    --color-purple: #871E88;
+    --color-d-purple: #560D64;
+    --color-dd-purple: #4A0B58;
+    --color-b-gray: #204011;
+    --color-gray: #183711;
+    --color-d-gray: #122F12;
+    --color-dd-gray: #0B230D;
+    
+}
+
+.home-backdrop {
+
+    background-image:url('/Assets/banner_style_empty_halloween.png');
+
+    background-repeat: repeat-x;
+    overflow: hidden;
+
+    width: 100vw;
+    height: var(--backdrop-height);
+    margin: 10px 0;
+    margin-top: calc(var(--navbar-height) + var(--backdrop-top));
+
+    transition: all 0.1s;
+
+    animation-name: backdrop-scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-position-y: -100px;
+
+}
+
+#electroImg{
+    width: 78% !important;
+}

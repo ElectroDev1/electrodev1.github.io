@@ -1,3 +1,19 @@
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth()+1;
+
+if(month == 10){
+
+    //Set halloween style
+    const HalloweenLink = document.getElementById('halloweenStyle');
+
+    HalloweenLink.setAttribute("href",'\\Code\\halloween_style.css')
+
+    const ElectroPFP = document.getElementById('electroImg');
+
+    ElectroPFP.setAttribute("src","\\Assets\\electro_halloween.png");
+}
+
 {//MODAL SYSTEM
 
     /*

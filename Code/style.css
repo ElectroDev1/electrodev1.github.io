@@ -64,6 +64,7 @@ html {
 }
 
 
+
 /*----------------------------------------------------------------
    Body setup
 */
@@ -759,6 +760,8 @@ h1 {
     filter: brightness(0.9);
 }
 
+
+
 @keyframes backdrop-scroll {
     0% {
         background-position-x: 0px;
@@ -886,7 +889,7 @@ h1 {
 .highlight-wave {
 
     animation-name: highlight-wave;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
