@@ -1,18 +1,3 @@
-const date = new Date();
-const day = date.getDate();
-const month = date.getMonth()+1;
-
-if(month == 10){
-
-    //Set halloween style
-    const HalloweenLink = document.getElementById('halloweenStyle');
-
-    HalloweenLink.setAttribute("href",'\\Code\\halloween_style.css')
-
-    const ElectroPFP = document.getElementById('electroImg');
-
-    ElectroPFP.setAttribute("src","\\Assets\\electro_halloween.png");
-}
 
 {//MODAL SYSTEM
 
@@ -271,3 +256,23 @@ var footer = document.getElementsByClassName('site-footer');
 for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro 2022'; }
 
 
+{
+
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.getMonth()+1;
+    
+    if(month == 10){
+    
+        //Set halloween style
+        const HalloweenLink = document.getElementById('halloweenStyle');
+    
+        HalloweenLink.setAttribute("href",'\\Code\\halloween_style.css')
+    
+        const ElectroPFP = document.getElementById('electroImg');
+    
+        ElectroPFP.setAttribute("src","\\Assets\\electro_halloween.png");
+    }
+    
+
+}
