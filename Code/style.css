@@ -975,6 +975,115 @@ h1 {
     --social-media-height: 80px;
 }
 
+/*-----------------------
+Contact
+*/
+
+.contact-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-button{
+    position:relative;
+    width:90%;
+    height:6vw;
+
+    background: var(--color-dd-gray);
+
+    max-width: 500px;
+    max-height:50px;
+    margin:15px 20px;
+    padding:10px;
+    box-shadow: 0 0 0 10px var(--color-dd-gray);
+    overflow: hidden;
+    border-radius: 0vh;
+    color:white;
+}
+
+.contact-button:hover{
+    cursor:pointer;
+}
+
+.contact-button:hover > .contact-button-background{
+    filter:opacity(1);
+    width:100%;
+}
+
+.contact-button-background{
+    position: absolute;
+    top:0;left:0;
+    width:0%;
+    height:100%;
+    filter:opacity(0);
+
+    transition: all 0.1s ease;
+}
+
+.contact-button-icon{
+    position: absolute;
+    top:50%; left:5%;
+    font-size: 350%;
+    margin:0;
+    transform: translateY(-50%);
+    transition: all 0.1s ease;
+}
+
+.contact-button:hover > .contact-button-icon{
+    transform: rotate(-10deg) translateY(-50%) scale(1.2);
+}
+
+.contact-button-text{
+    
+    position: absolute;
+    right:15%;top:50%;
+    margin:0;
+    transform: translateY(-50%) scale(1.25);
+
+    width:100%;    
+
+    text-align: right;
+
+
+    font-size:100%;
+}
+
+@media only screen and (max-width:700px){
+    .contact-button-icon{
+        font-size:200%;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .contact-button-text{
+        font-size: 70%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width:307px){
+    .contact-button-text{
+        display:none;
+    }
+    .contact-button-icon{
+        left:50%;
+        transform: translateY(-50%) translateX(-50%);
+        transition: all 0s linear !important;
+    }
+    
+    .contact-button:hover > .contact-button-icon{
+        transform: rotate(0deg) translateY(-50%) translateX(-50%) scale(1) !important;
+    }
+
+    .contact-button-background{
+        filter:opacity(1);
+        width:100%;
+    }
+
+}
+
+
 .social-medias {
 
     z-index: 0;
@@ -1714,110 +1823,3 @@ Art
     font-size: 1.25em;
 }
 
-/*-----------------------
-Contact
-*/
-
-.contact-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contact-button{
-    position:relative;
-    width:90%;
-    height:6vw;
-
-    background: var(--color-dd-gray);
-
-    max-width: 500px;
-    max-height:50px;
-    margin:15px 20px;
-    padding:10px;
-    box-shadow: 0 0 0 10px var(--color-dd-gray);
-    overflow: hidden;
-    border-radius: 0vh;
-    color:white;
-}
-
-.contact-button:hover{
-    cursor:pointer;
-}
-
-.contact-button:hover > .contact-button-background{
-    filter:opacity(1);
-    width:100%;
-}
-
-.contact-button-background{
-    position: absolute;
-    top:0;left:0;
-    width:0%;
-    height:100%;
-    filter:opacity(0);
-
-    transition: all 0.1s ease;
-}
-
-.contact-button-icon{
-    position: absolute;
-    top:50%; left:5%;
-    font-size: 350%;
-    margin:0;
-    transform: translateY(-50%);
-    transition: all 0.1s ease;
-}
-
-.contact-button:hover > .contact-button-icon{
-    transform: rotate(-10deg) translateY(-50%) scale(1.2);
-}
-
-.contact-button-text{
-    
-    position: absolute;
-    right:15%;top:50%;
-    margin:0;
-    transform: translateY(-50%) scale(1.25);
-
-    width:100%;    
-
-    text-align: right;
-
-
-    font-size:100%;
-}
-
-@media only screen and (max-width:700px){
-    .contact-button-icon{
-        font-size:200%;
-    }
-}
-
-@media only screen and (max-width:380px){
-    .contact-button-text{
-        font-size: 70%;
-        max-width: 50%;
-    }
-}
-
-@media only screen and (max-width:307px){
-    .contact-button-text{
-        display:none;
-    }
-    .contact-button-icon{
-        left:50%;
-        transform: translateY(-50%) translateX(-50%);
-        transition: all 0s linear !important;
-    }
-    
-    .contact-button:hover > .contact-button-icon{
-        transform: rotate(0deg) translateY(-50%) translateX(-50%) scale(1) !important;
-    }
-
-    .contact-button-background{
-        filter:opacity(1);
-        width:100%;
-    }
-
-}
