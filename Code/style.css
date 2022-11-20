@@ -194,14 +194,17 @@ h1 {
 }
 
 .bottom-bar {
-    background: var(--color-b-yellow);
+    background: /*var(--color-b-yellow)*/rgba(0,0,0,0);
     width: 100%;
     height: var(--bottombar-height);
 
+    box-shadow: 10px -5px 15px rgba(0,0,0,1);
+
     position: fixed;
-    left: 0px;
+    
     bottom: 0;
-    z-index: 1000;
+    z-index: 999;
+    transform:translateY(5px) translateX(-10px);
 }
 
 .top-bar {
@@ -709,6 +712,10 @@ h1 {
     overflow-y: hidden;
 }
 
+.main-header{
+    user-select: none;color:white; text-align:center; margin:10px auto; font-size:2.5em;
+}
+
 
 /*----------------------------------------------------------------
    Main site content wrapper
@@ -981,6 +988,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    display:none;
 }
 
 .social-medias-wrapper {
@@ -1040,6 +1048,7 @@ h1 {
         margin-bottom: 0;
 
     }
+
 }
 
 @media only screen and (max-width: 940px) {
@@ -1062,6 +1071,10 @@ h1 {
     .social-media-button-text {
         padding: 20px;
     }
+    .social-media-button{
+        font-size:4.5vw;
+    }
+
 
 }
 
@@ -1072,6 +1085,8 @@ h1 {
         margin: 0 auto;
 
     }
+
+
 
     .social-media-button {
         margin: 0 2px;
@@ -1362,14 +1377,38 @@ Game buttons
     }
 }
 
-.skill-container {
+/*------------------------------
+Skills
+*/
+
+.skill-container{
+    position: relative;
+}
+
+.skill-container[data-target = "0"] {
     user-select: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: var(--color-dd-gray);
     padding: 5px;
+    height:1.75em;
+    text-align: center;
+}
+/*
+.skill-container:hover{
+    cursor: pointer;
+}*/
 
+.skill-container[data-target = "1"] {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--color-dd-gray);
+    padding: 5px;
+    height:auto;
+  
     text-align: center;
 }
 
@@ -1381,11 +1420,47 @@ Game buttons
     margin: 0 5px;
 }
 
+.skill-container[data-target = "0"] > .skill-field {
+    display:none;
+}
+
+.skill-field-open{
+    width:5%;height:100%; position:absolute; transform:rotate(0deg);
+    left:1em; top:0;
+    background:teal;
+}
+
+.skill-container[data-target = "1"] > .skill-field-open{display:none;}
+
+.skill-field-open > #sk-1 {
+    background:red;
+    width:100%; height:20%;
+    transform: translateY(-50%) rotate(-45deg);
+    position:absolute;
+    top:50%; left:0;
+}
+
+.skill-field-open > #sk-2 {
+    background:white;
+    width:100%; height:20%;
+    transform: translateY(-50%) rotate(45deg);
+    position:absolute;
+    top:50%; left:0;
+}
+
 .skill-field p {
     font-family: 'Inconsolata_site';
     font-size: 1.25em;
     text-align: center;
 }
+
+.skill-field-title{
+    user-select: none; color:white; text-align:center; margin:5px auto; font-size:1.5em;
+}
+
+/*------------------------------
+Art
+*/
 
 .art-container {
     display: -ms-flexbox;
@@ -1637,4 +1712,112 @@ Game buttons
     font-family: 'Inconsolata_site';
     margin-bottom: 0;
     font-size: 1.25em;
+}
+
+/*-----------------------
+Contact
+*/
+
+.contact-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-button{
+    position:relative;
+    width:90%;
+    height:6vw;
+
+    background: var(--color-dd-gray);
+
+    max-width: 500px;
+    max-height:50px;
+    margin:15px 20px;
+    padding:10px;
+    box-shadow: 0 0 0 10px var(--color-dd-gray);
+    overflow: hidden;
+    border-radius: 0vh;
+    color:white;
+}
+
+.contact-button:hover{
+    cursor:pointer;
+}
+
+.contact-button:hover > .contact-button-background{
+    filter:opacity(1);
+    width:100%;
+}
+
+.contact-button-background{
+    position: absolute;
+    top:0;left:0;
+    width:0%;
+    height:100%;
+    filter:opacity(0);
+
+    transition: all 0.1s ease;
+}
+
+.contact-button-icon{
+    position: absolute;
+    top:50%; left:5%;
+    font-size: 350%;
+    margin:0;
+    transform: translateY(-50%);
+    transition: all 0.1s ease;
+}
+
+.contact-button:hover > .contact-button-icon{
+    transform: rotate(-10deg) translateY(-50%) scale(1.2);
+}
+
+.contact-button-text{
+    
+    position: absolute;
+    right:15%;top:50%;
+    margin:0;
+    transform: translateY(-50%) scale(1.25);
+
+    width:100%;    
+
+    text-align: right;
+
+
+    font-size:100%;
+}
+
+@media only screen and (max-width:700px){
+    .contact-button-icon{
+        font-size:200%;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .contact-button-text{
+        font-size: 70%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width:307px){
+    .contact-button-text{
+        display:none;
+    }
+    .contact-button-icon{
+        left:50%;
+        transform: translateY(-50%) translateX(-50%);
+        transition: all 0s linear !important;
+    }
+    
+    .contact-button:hover > .contact-button-icon{
+        transform: rotate(0deg) translateY(-50%) translateX(-50%) scale(1) !important;
+    }
+
+    .contact-button-background{
+        filter:opacity(1);
+        width:100%;
+    }
+
 }

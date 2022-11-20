@@ -21,6 +21,7 @@
     <script src="\Code\jquery.js"></script>
     <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/e459a4efec.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="\Code\style.css">
     <link rel="stylesheet" id="halloweenStyle" >
@@ -88,12 +89,8 @@
 
 
     <div class="site-content">
-
-        <div style="display:flex; justify-content:center;">
-            <h1 id="about" style="user-select: none;color:white; text-align:center; margin:5px auto; font-size:4em;">
-                ABOUT
-            </h1>
-        </div>
+        <br>
+       
 
         <div style="display:flex; justify-content:center;  user-select: none;">
 
@@ -117,6 +114,7 @@
                 <img src="/Assets/electro3.png" id="electroImg" style="position:relative; left:60px; width:75%; height:auto; min-width:100px;">
             </div>
         </div>
+        <br>
         <hr>
 
         <div style="display:flex; justify-content:center;">
@@ -125,9 +123,14 @@
             </h1>
         </div>
 
-        <h4 style=" user-select: none; color:white; text-align:center; margin:5px 0; font-size:1.5em;">ART</h2>
+        <h4 class="skill-field-title">ART</h4>
 
-            <div class="skill-container">
+            <div class="skill-container" data-target="1">
+
+                <div class="skill-field-open">
+                    <div id="sk-1"></div>
+                    <div id="sk-2"></div>
+                </div>
 
                 <div class="skill-field" style="width:50%;">
                     <h4>Programs</h4>
@@ -142,30 +145,31 @@
                     <h4>Fields</h4>
 
                     <p>Character design</p>
-                    <p>Logo design</p>
+                    <p>Graphic design</p>
                     <p>Modelling</p>
                     <p>Texturing</p>
                     <p>Rigging</p>
+                    <p>Pixel art</p>
+                    <p>Animation</p>
                 </div>
 
             </div>
+            <br>
+            <h4 class="skill-field-title">PROGRAMMING & GAME DEVELOPMENT</h4>
 
-            <h4
-                style=" user-select: none; color:white; text-align:center; margin:5px 0; margin-top:15px; font-size:1.5em;">
-                PROGRAMMING &<br>GAME DEVELOPMENT</h2>
+                <div class="skill-container" data-target = "1">
 
-                <div class="skill-container">
+                    <div class="skill-field">
+                        <h4>Languages</h4>
+                    
+                        <p>GML</p>
+                        <p>Javascript</p>
+                        <p>HTML/CSS</p>
+                        <p>Lua</p>
 
-                    <div class="skill-field" ">
-               <h4>Languages</h4>
-               
-                <p>GML</p>
-                <p>Javascript</p>
-                <p>HTML/CSS</p>
-                <p>Lua</p>
-            </div>
+                    </div>
 
-            <div class=" skill-field">
+                    <div class=" skill-field">
                         <h4>Engines</h4>
 
                         <p>Gamemaker</p>
@@ -183,42 +187,72 @@
 
                 </div>
 
-                <br>
-                <hr>
+            <br>
+            <hr>
 
-                <div style="display:flex; justify-content:center;">
-                    <h1 style=" user-select: none;color:white; text-align:center; margin:5px auto; font-size:3em;">
-                        CONTACT
-                    </h1>
-                </div>
+            <div style="display:flex; justify-content:center;">
+                <h1 class="main-header">CONTACTS & SOCIAL MEDIA</h1>
+            </div>
 
-                <p id="contacts"
-                    style="font-family:'Inconsolata_site'; font-size:1.5em; line-height:1.2em; user-select: none; text-align:center;">
-                    If you need to contact me, you can send me an
-                    <a href="mailto:electrogamesbusinnes@gmail.com" class="normal-link" target="_blank">
-                            email</a>.
-                    <br>
-                    You can also
-                    <a href="https://twitter.com/EIectroDev" target="_blank" class="normal-link">
-                            send me a DM on Twitter</a>, but emails are preferred. I'll try to answer as soon as
-                    possible.
-                </p>
+            <div class="contact-container" id="contacts">
 
-                <div class="site-footer">
-                    <p>Electro 2022</p>
-                </div>
+                <a class="contact-button" href="mailto:electrogamesbusinnes@gmail.com" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color: var(--color-purple)"></div>
+                    <i class="contact-button-icon fa-solid fa-envelope"></i>
+                    <p class="contact-button-text">Send an email</p>
+                </a>
+                <a class="contact-button" href="https://twitter.com/EIectroDev" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#1D9BF0"></div>
+                    <i class="contact-button-icon fab fa-twitter"></i>
+                    <p class="contact-button-text">Twitter</p>
+                </a>
+                <a class="contact-button" href="https://www.tumblr.com/eiectrodev" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#1D3765"></div>
+                    <i class="contact-button-icon fab fa-tumblr"></i>
+                    <p class="contact-button-text">Tumblr</p>
+                </a>
+                <a class="contact-button" href="https://discord.gg/KRfvxPTtP7" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#5662F6"></div>
+                     <i class="contact-button-icon fab fa-discord"></i>
+                    <p class="contact-button-text">Discord server</p>
+                </a>
+                <a class="contact-button" href="https://electrodev.itch.io/" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#FA5C5C"></div>
+                     <i class="contact-button-icon fab fa-itch-io"></i>
+                    <p class="contact-button-text">Itch.io</p>
+                </a>
+                <a class="contact-button" href="https://github.com/ElectroDev1" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#0D1117"></div>
+                     <i class="contact-button-icon fab fa-github"></i>
+                    <p class="contact-button-text">Github</p>
+                </a>
+                <a class="contact-button" href="https://www.youtube.com/channel/UCf_pnlWS5u7NiUYKiTor2-A/featured" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#FF0000"></div>
+                     <i class="contact-button-icon fab fa-youtube"></i>
+                    <p class="contact-button-text">Youtube</p>
+                </a>
+                <a class="contact-button" href="https://www.youtube.com/channel/UCf_pnlWS5u7NiUYKiTor2-A/featured" target="_blank">
+                    <div class="contact-button-background" 
+                        style="background-color:#FF5500"></div>
+                     <i class="contact-button-icon fab fa-soundcloud"></i>
+                    <p class="contact-button-text">Soundcloud</p>
+                </a>
+
+            </div>
+
+            <div class="site-footer"></div>
 
     </div>
-
 
     <script src="\Code\script.js"></script>
 
 </body>
 
 </html>
-
-<!--
-     <button class="modal-open"  openmodal="modal-2">
-        Click me to open the modal
-        </button>
--->
