@@ -38,6 +38,7 @@ html {
 }
 
 
+
 /*----------------------------------------------------------------
    General variables
 */
@@ -126,6 +127,17 @@ h1 {
         --bar-width: 50px;
         --bar-spacing: 30px;
         --bar-padding: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 2510px) {
+
+    :root {
+        --bar-angle: calc(var(--global-skew) * -0.5);
+        --bar-width: 250px;
+        --bar-spacing: 150px;
+
     }
 
 }
@@ -232,7 +244,7 @@ h1 {
     --navbar-spacing: 1.25vw;
     --navbar-min-width: 10px;
 
-    --navbar-font-size-mobile: 1em;
+    --navbar-font-size-mobile: 1.2em;
     --navbar-font-spacing-mobile: 5px;
 
     --navbar-skew: calc(var(--global-skew) * -1);
@@ -280,7 +292,7 @@ h1 {
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 590px) {
 
     .navbar-buttons {
         font-size: 0.6em;
@@ -300,8 +312,19 @@ h1 {
     }
 
     :root {
-        --navbar-height: 50px;
+        --navbar-height: 40px;
         --navbar-border: 5px;
+        --navbar-spacing: 3vw;
+        --navbar-font-size: 1.2em;
+    }
+
+}
+
+
+@media only screen and (max-width: 330px) {
+
+    :root {
+        --navbar-font-size: 1em;
     }
 
 }
@@ -338,7 +361,7 @@ h1 {
     justify-content: center;
     align-items: center;
 
-    margin: 0 -2px;
+    margin: 0 0vw;
     padding: 0 var(--navbar-spacing);
 
     font-size: var(--navbar-font-size);
@@ -589,14 +612,15 @@ h1 {
 
 .modal-body {
 
-    width: fit-content;
-    min-width: fit-content;
-    max-width: 80%;
+
+   width: 60vw;
+
+    max-width: 100rem;
 
     height: fit-content;
 
 
-    margin: 50px auto;
+    margin: 20px auto;
     position: relative;
 
 
@@ -617,6 +641,24 @@ h1 {
 
     transition: all 0.2s;
     scroll-behavior: smooth;
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .modal-body {
+        width: 80vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) {
+
+    .modal-body {
+        width: 90vw;
+    }
 
 }
 
@@ -670,7 +712,7 @@ h1 {
     right: 0;
     transform: scale(1.5);
     right: 15px;
-    top: 10px;
+    top: 7.5px;
     user-select: none;
 }
 
@@ -684,7 +726,7 @@ h1 {
 
 .modal-header {
     border-bottom: 3px solid var(--color-black);
-    padding: calc( var(--navbar-padding) + 8px);
+    padding: calc( var(--navbar-padding) + 1px);
 }
 
 .modal-header>h1 {
@@ -714,6 +756,13 @@ h1 {
 
 .main-header{
     user-select: none;color:white; text-align:center; margin:10px auto; font-size:2.5em;
+}
+
+.modal-art-img{
+    width: 69%;
+    margin: 5px 0;
+
+    box-shadow: 0px 0px 20px black;
 }
 
 
@@ -829,7 +878,7 @@ h1 {
 
 .home-backdrop-myname {
 
-    font-size: 12vw;
+    font-size: 1000%;
     margin: 0;
     transition: all 0.1s;
     /*
@@ -840,7 +889,7 @@ h1 {
     -webkit-background-clip: text;*/
     color: var(--color-b-yellow);
 
-    letter-spacing: 2vw;
+    letter-spacing: min(1.5vw, 0.75rem);
 
     animation-name: title-spawn;
     animation-duration: 1.2s;
@@ -854,13 +903,7 @@ h1 {
 
 }
 
-@media only screen and (max-width: 500px) {
 
-    .home-backdrop-myname {
-        font-size: 10vw;
-    }
-
-}
 
 @keyframes title-spawn {
 
@@ -873,7 +916,7 @@ h1 {
 
 .home-backdrop-p1 {
     font-family: 'Inconsolata_site', sans-serif;
-    font-size: 3vw;
+    font-size: 200%;
     margin: 0;
 
     animation-name: p-spawn;
@@ -882,6 +925,7 @@ h1 {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 
 @keyframes p-spawn {
     0% {
@@ -935,13 +979,30 @@ h1 {
 
 .typewritten {
     font-family: 'Inconsolata_site', sans-serif;
-    font-size: 3vw;
+    font-size: 300%;
 
     overflow: hidden;
     white-space: nowrap;
     animation: typing 1s steps(20, end) forwards;
     animation-delay: 1s;
     width: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .home-backdrop-myname {
+        font-size: 10vw;
+    }
+
+    .home-backdrop-p1 {
+        font-size: 4vw;
+    }
+
+    .typewritten {
+        font-size: 4vw;
+    }
+
 }
 
 @keyframes typing {
@@ -958,6 +1019,9 @@ h1 {
 .site-content {
 
     background: var(--color-d-gray);
+    background-size: contain;
+
+    
 
     font-size: 1em;
 
@@ -965,10 +1029,27 @@ h1 {
 
     height: 100%;
     width: calc(100% - var(--bar-padding) * 3);
+    max-width: 100rem;
     padding: 10px 25px;
     transition: all 0.1s;
     z-index: -1;
 
+}
+
+.textured-background {
+    position:absolute; 
+    top:attr(bkgMarg integer,0);
+    left:attr(bkgMarg,0); 
+
+    z-index: -1;
+
+
+    width:calc(100%  * 0); 
+    height:calc(100% * 0);                
+    background: url('/Assets/octobkg.png'); 
+    filter:opacity(0.7);
+
+    backdrop-filter: brightness(400%)
 }
 
 :root {
@@ -986,6 +1067,8 @@ Contact
 }
 
 .contact-button{
+
+
     position:relative;
     width:90%;
     height:6vw;
@@ -1028,6 +1111,10 @@ Contact
     margin:0;
     transform: translateY(-50%);
     transition: all 0.1s ease;
+}
+
+.ko-fi{
+ 
 }
 
 .contact-button:hover > .contact-button-icon{
@@ -1527,6 +1614,7 @@ Skills
     color: white;
     text-align: center;
     margin: 0 5px;
+    z-index: 2;
 }
 
 .skill-container[data-target = "0"] > .skill-field {
@@ -1588,7 +1676,7 @@ Art
 .art-column {
     flex: 12.5%;
 
-    padding: 20px;
+    padding:0 20px;
     margin: 0;
     transition: all 0.2s;
     width: 40%;
@@ -1600,7 +1688,7 @@ Art
     cursor: pointer;
     transition: transform 0.2s;
     transition-timing-function: var(--animation-bounce-curve);
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
@@ -1612,7 +1700,11 @@ Art
     transition: transform 0.2s;
     transition-timing-function: var(--animation-bounce-curve);
     box-shadow: 0 0 10px 5px var(--color-black);
-    margin-top: 20px;
+    
+    transform: scale(1);
+    
+    margin-top: 10%;
+    
 
 }
 
@@ -1790,7 +1882,7 @@ Art
 }
 
 .info-li {
-    margin-bottom: 12px;
+    margin-bottom: 1.5rem;
 }
 
 .container-iframe {
@@ -1823,3 +1915,163 @@ Art
     font-size: 1.25em;
 }
 
+
+
+.comm-info-title{
+    font-size:1.5em;
+    position:absolute;
+   
+    background:var(--color-d-gray);
+    padding-right: 1rem;
+
+    line-height:1em;
+}
+
+
+
+.comm-info-title-bar{
+    background:white;
+            width:100%;
+            height:1px;
+
+}
+
+.comm-info-header{
+    display:flex; align-items:center;
+  
+    padding: 3rem 0;
+}
+
+
+
+.comm-info-container{
+    background:var(--color-dd-gray); margin-top:-15px;
+        width:100%; height:auto; color:white;  padding:1px;
+        font-family:'Inconsolata_site'; overflow:hidden; font-size: 1.2em;
+}
+
+.comm-tiers-container{
+    display:flex;justify-content: center; flex-wrap: wrap;
+    margin-top:-15px;
+    padding:1rem;
+    background:var(--color-dd-gray);
+    user-select: none;
+}
+
+.comm-tier{
+    margin: 0 5px;
+    flex-grow: 1;
+    flex-basis: 0;
+ 
+}
+
+.comm-tier > img{
+
+    width: 100%;
+}
+
+.comm-tier > img:hover {
+    
+}
+
+.comm-tier > p{
+    font-family: 'Inconsolata_site', sans-serif;
+    text-align: center;
+    margin:0;
+}
+
+
+@media only screen and (max-width: 600px){
+    .comm-tier{
+        width: 40%;
+        max-width:40%;
+        min-width: 40%;
+        margin: 0 1em;
+    }
+
+    .comm-tier > img{
+        margin-top: 1em;
+    }
+    
+    .comm-tier > p{
+        margin-top:0;
+        margin-bottom: 1em;
+    }
+
+    .comm-tiers-container{
+        padding:0.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 380px){
+    .comm-info-header{
+        margin-left:-0rem; padding-top:1.25rem; padding-bottom: 2.25rem; justify-content: center;
+    }
+
+    .comm-info-title{
+        background:none; font-size:1.25em; text-align: center; padding:0; margin:0; position:relative;
+    }
+
+    .comm-info-title-bar{ width:0; display:none;}
+
+    .comm-info-container{
+        margin-top: -30px;
+    }
+
+    .comm-tiers-container{
+         padding: .5rem;
+         padding-top:0;
+         margin-top:-30px; 
+        
+    }
+
+    .comm-tier > p{
+        font-size:1.25em;
+    }
+
+    .comm-tier{
+        width: 100%;
+        max-width:100%;
+        min-width: 100%;
+    }
+}
+
+
+.comm-info-contact-container{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top:0em;
+    margin-bottom:2em;
+}
+
+.comm-info-contact{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-top:1.5em;
+}
+
+.comm-info-contact > p{
+    text-align: center; margin:0; font-size:2em;
+}
+
+.comm-info-contact > div{
+    display:flex; align-items:center; justify-content: center; margin-top:-1em; height:12vw; max-height:80px; min-height:40px;
+}
+
+.comm-info-contact > div > .comm-info-icon{
+
+    position:relative; font-size:4em; color:var(--color-white);
+
+}
+
+.comm-info-contact > div > p{
+
+    color:var(--color-white);
+    font-size:1.5em; margin:0; margin-left:.5em;
+
+}

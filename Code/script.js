@@ -262,7 +262,7 @@ for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro 20
     const day = date.getDate();
     const month = date.getMonth()+1;
     
-    if(month == 10){
+    if(month == 10 && day>=29){
     
         //Set halloween style
         const HalloweenLink = document.getElementById('halloweenStyle');
@@ -272,6 +272,15 @@ for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro 20
         const ElectroPFP = document.getElementById('electroImg');
     
         ElectroPFP.setAttribute("src","\\Assets\\electro_halloween.png");
+    }
+    else if(month == 12 && day>=20 && day<30){
+
+        const ChristmasLink = document.getElementById('christmasStyle');
+
+        ChristmasLink.setAttribute('href','\\Code\\christmas_style.css')
+
+        //const 
+
     }
     
 

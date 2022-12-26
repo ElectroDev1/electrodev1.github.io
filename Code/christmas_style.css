@@ -1,0 +1,44 @@
+/*:root {
+    --color-black: black;
+    --color-white: white;
+    --color-b-yellow: #ff5858;
+    --color-yellow: #FF6601;
+    --color-d-yellow: #FF5601;
+    --color-orange: #FF4001;
+    --color-b-purple: #FEA6FF;
+    --color-purple: #E56AFF;
+    --color-d-purple: #560D64;
+    --color-dd-purple: #4A0B58;
+    --color-b-gray: #AC2832;
+    --color-gray: #971D35;
+    --color-d-gray: #7F193F;
+    --color-dd-gray: #631242;
+    
+}
+
+.home-backdrop {
+
+    background-image:url('/Assets/banner_style_empty_christmas.png');
+   
+
+    background-repeat: repeat-x;
+    overflow: hidden;
+
+    width: 100vw;
+    height: var(--backdrop-height);
+    margin: 10px 0;
+    margin-top: calc(var(--navbar-height) + var(--backdrop-top));
+
+    transition: all 0.1s;
+
+    animation-name: backdrop-scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-position-y: -100px;
+
+}
+
+#electroImg{
+    width: 78% !important;
+}

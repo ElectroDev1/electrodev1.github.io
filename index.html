@@ -22,9 +22,11 @@
     <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://kit.fontawesome.com/e459a4efec.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
     <link rel="stylesheet" href="\Code\style.css">
     <link rel="stylesheet" id="halloweenStyle" >
+    <link rel="stylesheet" id="christmasStyle" >
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -46,14 +48,14 @@
 
             <div class="home-backdrop-elements">
 
-                <div style="text-align:center; position:relative; top:20px;">
+                <div style="text-align:center; position:relative; top:0px;">
                     <p class="home-backdrop-p1 highlight-wave">Hi, my name's</p>
                     <p class="home-backdrop-myname">ELECTRO</p>
                     <p class="home-backdrop-p1 ">
-                    <p class="typewritten" style="display: inline-block; margin:0;">
-                        I'm an <span class="highlight-wavec">artist</span> and
-                        <span class="highlight-wavec ">programmer</span>
-                    </p>
+                        <p class="typewritten" style="display: inline-block; margin:0;">
+                            I'm an <span class="highlight-wavec">artist</span> and
+                            <span class="highlight-wavec ">programmer</span>
+                        </p>
                     </p>
                 </div>
 
@@ -127,6 +129,8 @@
 
             <div class="skill-container" data-target="1">
 
+                <div class="textured-background" style="transform: scale(-1);"></div>
+
                 <div class="skill-field-open">
                     <div id="sk-1"></div>
                     <div id="sk-2"></div>
@@ -158,6 +162,8 @@
             <h4 class="skill-field-title">PROGRAMMING & GAME DEVELOPMENT</h4>
 
                 <div class="skill-container" data-target = "1">
+
+                    <div class="textured-background"></div>
 
                     <div class="skill-field">
                         <h4>Languages</h4>
@@ -196,9 +202,25 @@
 
             <div class="contact-container" id="contacts">
 
-                <a class="contact-button" href="mailto:electrogamesbusinnes@gmail.com" target="_blank">
+                <a class="contact-button" href="https://ko-fi.com/electrodev" target="_blank">
+                    <div class="textured-background" bkgMarg="0"></div>
                     <div class="contact-button-background" 
-                        style="background-color: var(--color-purple)"></div>
+                        style="background-color: #FF5E5B"></div>
+
+                        <iconify-icon icon="simple-icons:kofi" class="contact-button-icon ko-fi"></iconify-icon>
+                        
+
+                    <p class="contact-button-text">Buy me a coffee</p>
+                </a>
+                
+            </div>
+
+            <div class="contact-container" id="contacts">
+
+                <a class="contact-button" href="mailto:electrogamesbusinnes@gmail.com" target="_blank">
+                    <div class="textured-background" bkgMarg="0"></div>
+                    <div class="contact-button-background" 
+                        style="background-color: #7E46BB"></div>
                     <i class="contact-button-icon fa-solid fa-envelope"></i>
                     <p class="contact-button-text">Send an email</p>
                 </a>
