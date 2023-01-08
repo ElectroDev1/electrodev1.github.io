@@ -252,13 +252,15 @@ for (var o = links.length - 1; o >= 0; o--) {
 
 }
 
-var footer = document.getElementsByClassName('site-footer');
-for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro 2022'; }
 
 
 {
 
     const date = new Date();
+
+    var footer = document.getElementsByClassName('site-footer');
+    for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro '+date.getFullYear(); }
+    
     const day = date.getDate();
     const month = date.getMonth()+1;
     
