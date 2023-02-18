@@ -19,6 +19,7 @@
     <link rel="icon" id="site-icon" href="/Assets/site_icon.png">
 
     <script src="\Code\jquery.js"></script>
+    <script src="\Code\ART.js"></script>
     <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
@@ -31,7 +32,7 @@
 
     <script>
         $(function () { $(".navbar").load("navbar.html"); });
-        $(function () { $(".art-modals").load("Modals/art_2023.html"); });
+       // $(function () { $(".art-modals").load("Modals/art_2023.html"); });
     </script>
 
 
@@ -61,9 +62,6 @@
     <div class="top-bar"></div>
     <div class="bottom-bar"></div>
 
-
-
-
     <div class="site-content">
 
         <div style="display:flex; justify-content:center;">
@@ -72,48 +70,49 @@
             </h1>
         </div>
 
-        <div class="art-container">
-
-            <div class="art-column">
-
-                <img class="modal-open" openmodal="modal-beer" 
-                src="/Assets/Art/2023/Icons/beer.png">
-
-                <img class="modal-open" openmodal="modal-tetra-bday" 
-                src="/Assets/Art/2023/Icons/bday.png">
-
-                <img class="modal-open" openmodal="modal-tentacles" 
-                    src="/Assets/Art/2023/Icons/tentacles.png">
-
-            </div>
-
-            <div class="art-column">
-
-
-                <img class="modal-open" openmodal="modal-ned" 
-                    src="/Assets/Art/2023/Icons/ned_celHeadshot_show.png">
-
-                <img class="modal-open" openmodal="modal-sparkleon" 
-                    src="/Assets/Art/2023/Icons/sparkle on.png">
-
-                <img class="modal-open" openmodal="modal-mrsquid" 
-                    src="/Assets/Art/2023/Icons/mr squid.png">
-
-            </div>
-
-        </div>
+        <div class="art-container"></div>
 
         <div class="site-footer">
             <p>Electro 2022</p>
         </div>
-
+    
     </div>
-
 
     <div class="art-modals"></div>
 
 
     <script src="\Code\script.js"></script>
+
+    <script>
+
+        var startArtSrc = "/Assets/Art/2023/"
+
+        const Modals_2023 = [];
+
+        const artNames2023_1 = [
+           
+            new Art("modal-splattershots", "spaltshr.png", "Splattershots"),
+            new Art("modal-banner-specials", "banner_specials.png", "Special weapon themed Splatoon banners"),
+            new Art("modal-bytes", "bytes.png", "Fnaf World's 7th anniversary"),
+            new Art("modal-beer", "beer.png", "Glass of beer"),
+            new Art("modal-tetra-bday", "bday.png", "Birthday gift for Tetracold"),
+            new Art("modal-tentacles", "tentacles.png", "Tentacles"),
+        ]
+
+        const artNames2023_2 = [
+        new Art("modal-exposed octocopter", "exposed octocopter.png", "Special weapon themed Splatoon banners"),
+            new Art("modal-stylized-inkling", "myinkling 2.png", "Stylized inkling"),
+            new Art("modal-ned", "ned_celHeadshot_show.png", "Ned - commission for Razur-draws"),
+            new Art("modal-sparkleon", "sparkle on.png", "Sparkle on"),
+            new Art("modal-mrsquid", "mr squid.png", "Mr squid"),
+        ]
+
+
+        const pageArtArray = [artNames2023_1, artNames2023_2];
+
+        createArtColumns(pageArtArray)
+        createAndFireArtModalList(Modals_2023, pageArtArray)
+    </script>
 
 </body>
 
