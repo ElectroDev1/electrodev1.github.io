@@ -97,8 +97,9 @@ const generateArtModals = function(modalArray){
                         p.style.marginTop = "0"
                         p.style.marginBottom = "0"
 
-                            const node = document.createTextNode(art.name);
-                            p.appendChild(node);
+                            //const node = document.createTextNode(art.name);
+                            //p.appendChild(node);
+                        p.innerHTML = art.name;
 
                         header.appendChild(p);
 
