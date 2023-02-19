@@ -1,4 +1,4 @@
-var startArtSrc = "/Assets/Art/2023/"
+let ArtPath = ""
 
 class Art {
     constructor(modalName,fileName,name="default") {
@@ -33,10 +33,12 @@ const createArtColumns = function(entries=[]){
                 container.appendChild(column);
 
 
-                const entry = entries[i];
 
-                addArtToColumn(entry, "art-column-"+i)
             }
+
+            const entry = entries[i];
+
+            addArtToColumn(entry, "art-column-"+i)
 
         }
     
@@ -44,20 +46,6 @@ const createArtColumns = function(entries=[]){
 
 }
 
-const addArtToColumn = function(artArray,elementId){
-
-    for(const artName of artArray){
-        const img = document.createElement("img");
-        img.setAttribute("src",startArtSrc+"Icons/"+artName.fileName);
-        img.setAttribute("alt",artName.name);
-        img.setAttribute("openmodal",artName.modalName)
-        img.className = "modal-open"
-
-        const column = document.getElementById(elementId);
-        
-        column.appendChild(img)
-    }
-}
 
 const generateArtModals = function(modalArray){
 
@@ -117,6 +105,8 @@ const generateArtModals = function(modalArray){
                     content.className = "modal-content";
                     body.appendChild(content);
 
+                    if(Array.isArray(art.fileName)===false){
+
                         const imgContainer = document.createElement("div");
                         imgContainer.style.display = "flex";
                         imgContainer.style.justifyContent = "center";
@@ -124,14 +114,37 @@ const generateArtModals = function(modalArray){
 
                             const img = document.createElement("img");
                             img.className = "modal-art-img";
+                            img.setAttribute("loading","lazy")
                             img.setAttribute("alt", art.name);
-                            img.setAttribute("src", startArtSrc+art.fileName);
+                            img.setAttribute("src", ArtPath+art.fileName);
                             imgContainer.appendChild(img);
+
+                    }else{
+
+                        for(let i=0; i<art.fileName.length; i++){
+
+                            const imgContainer = document.createElement("div");
+                            imgContainer.style.display = "flex";
+                            imgContainer.style.justifyContent = "center";
+                            content.appendChild(imgContainer);
+    
+                                const img = document.createElement("img");
+                                img.className = "modal-art-img";
+                                img.setAttribute("loading","lazy")
+                                img.setAttribute("alt", art.name);
+                                img.setAttribute("src", ArtPath+art.fileName[i]);
+                                imgContainer.appendChild(img);   
+
+                        }
+
+                    }
 
 
         modalsContainer.appendChild(modal);
         
     }
+
+  
 
 }
 
@@ -159,4 +172,23 @@ const createAndFireArtModalList = function(modalArray,artArray){
     generateArtModals(modalArray);
 
 
+}
+
+const addArtToColumn = function(artArray,elementId){
+    
+    for(const artName of artArray){
+        const img = document.createElement("img");
+
+
+
+        img.setAttribute("src",ArtPath+"Icons/"+ (Array.isArray(artName.fileName) === true ? artName.fileName[0] : artName.fileName));
+        img.setAttribute("alt",artName.name);
+        img.setAttribute("openmodal",artName.modalName)
+        img.setAttribute("loading","lazy")
+        img.className = "modal-open"
+
+        const column = document.getElementById(elementId);
+        
+        column.appendChild(img)
+    }
 }
