@@ -811,7 +811,7 @@ h1 {
     background-size: cover;
     overflow: hidden;
 
-    width: 100vw;
+    width: 100%;
     height: var(--backdrop-height);
     transition: all 0.1s;
 
@@ -826,7 +826,7 @@ h1 {
 
 
     filter: brightness(1);   
-    transform: skew(20deg);
+  
 }
 
 @keyframes backdrop-scroll {
