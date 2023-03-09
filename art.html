@@ -41,13 +41,15 @@
 <body>
 
 
-    <div class="home-backdrop" style="height:0;">
+    <div class="home-backdrop" style="height: calc(var(--backdrop-height) / 2.0);" >
 
-        <div class="home-backdrop-wrapper">
+        <div class="home-backdrop-background" style="height: calc(var(--backdrop-height) / 2.0);"></div>
+
+        <div class="home-backdrop-wrapper" style="height: calc(var(--backdrop-height) / 2.0);">
 
             <div class="home-backdrop-elements">
 
-                <div style="text-align:center; position:relative; top:20px;">
+                <div style="text-align:center; position:relative; top:0px; font-size: .75em;">
                     <p class="home-backdrop-myname">ART</p>
                 </div>
 
@@ -64,11 +66,6 @@
 
     <div class="site-content">
 
-        <div style="display:flex; justify-content:center;">
-            <h1 style=" user-select: none;color:white; text-align:center; margin:5px auto; font-size:2em;">
-                ART
-            </h1>
-        </div>
 
         <div class="art-container"></div>
 
@@ -91,6 +88,7 @@
 
         const artNames2023_1 = [
            
+            new Art("modal-horrorboros", "horrorboros.png", "Horrorboros"),
             new Art("modal-splattershots", "spaltshr.png", "Splattershots"),
             new Art("modal-banner-specials", "banner_specials.png", 'Special weapon themed Splatoon banners<br><br>'
             +
