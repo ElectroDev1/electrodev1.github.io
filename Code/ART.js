@@ -8,6 +8,7 @@ class Art {
     }
 }
 
+let ArtImgs = [];
 
 const createArtColumns = function(entries=[]){
 
@@ -117,6 +118,8 @@ const generateArtModals = function(modalArray){
                             img.setAttribute("loading","lazy")
                             img.setAttribute("alt", art.name);
                             img.setAttribute("src", ArtPath+art.fileName);
+                            ArtImgs.push(img);
+                            
                             imgContainer.appendChild(img);
 
                     }else{
@@ -134,6 +137,7 @@ const generateArtModals = function(modalArray){
                                 img.setAttribute("alt", art.name);
                                 img.setAttribute("src", ArtPath+art.fileName[i]);
                                 imgContainer.appendChild(img);   
+                                ArtImgs.push(img);
 
                         }
 
@@ -191,4 +195,14 @@ const addArtToColumn = function(artArray,elementId){
         
         column.appendChild(img)
     }
+}
+
+const checkArtClick = function(){
+
+    for(const img of ArtImgs){
+
+        img.addEventListener("click", function(){ window.open(img.src, '_blank').focus(); })
+
+    }
+
 }

@@ -88,6 +88,7 @@
 
         const artNames2023_1 = [
            
+            new Art("modal-zake2", "zake.png", "Zake - hunting trophy"),
             new Art("modal-horrorboros", "horrorboros.png", "Horrorboros"),
             new Art("modal-splattershots", "spaltshr.png", "Splattershots"),
             new Art("modal-banner-specials", "banner_specials.png", 'Special weapon themed Splatoon banners<br><br>'
@@ -100,7 +101,9 @@
         ]
 
         const artNames2023_2 = [
+        new Art("modal-bonk", "bonk.png", 'BONK poster'),
         new Art("modal-exposed octocopter", "exposed octocopter.png", 'Exposed octocopter'),
+       
             new Art("modal-stylized-inkling", "myinkling 2.png", "Stylized inkling"),
             new Art("modal-ned", "ned_celHeadshot_show.png", "Ned - commission for Razur-draws"),
             new Art("modal-sparkleon", "sparkle on.png", "Sparkle on"),
@@ -108,6 +111,7 @@
         ]
 
         const artNames2023_3 = [
+            new Art("modal-golden-candy", "golden candy_2.png", "Golden candy"),
             new Art("modal-dl", "dl.png", "Dark Lori"),
             new Art("modal-tetra-bday", "bday.png", "Birthday gift for Tetracold"),
             new Art("modal-tentacles", "tentacles.png", "Tentacles"),
@@ -194,6 +198,8 @@
 
         createArtColumns(pageArtArray);
         createAndFireArtModalList(Modals_2021, pageArtArray)
+
+        checkArtClick();
 
     </script>
 
