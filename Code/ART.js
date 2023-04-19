@@ -206,3 +206,16 @@ const checkArtClick = function(){
     }
 
 }
+
+const distributeInThreeArrays = function(list){
+
+    const threePartIndex = Math.floor(list.length / 4);
+
+    const thirdPart = list.splice(-threePartIndex);
+    const secondPart = list.splice(-threePartIndex);
+    const secondPart2 = list.splice(-threePartIndex);
+    const firstPart = list;     
+
+    return [firstPart, secondPart, secondPart2, thirdPart];
+
+}

@@ -82,122 +82,62 @@
 
     <script>
 
-        ArtPath = "/Assets/Art/2023/"
+        ArtPath = "/Assets/Art/"
+
+        const Modals = [];
+
+        
+
+        ArtPath = "/Assets/Art/"
 
         const Modals_2023 = [];
 
-        const artNames2023_1 = [
-           
+        const artNames = [
+
+            new Art("modal-SL", "SL.png", "SL"),
             new Art("modal-zake2", "zake.png", "Zake - hunting trophy"),
+            new Art("modal-bonk", "bonk.png", 'BONK poster'),
+            new Art("modal-golden-candy", "golden candy_2.png", "Golden candy"),
             new Art("modal-horrorboros", "horrorboros.png", "Horrorboros"),
+            new Art("modal-dl", "dl.png", "Dark Lori"),
             new Art("modal-splattershots", "spaltshr.png", "Splattershots"),
+            new Art("modal-exposed octocopter", "exposed octocopter.png", 'Exposed octocopter'),
             new Art("modal-banner-specials", "banner_specials.png", 'Special weapon themed Splatoon banners<br><br>'
             +
             "Part of <a class='normal-link' href='https://seymourschlong.github.io/splashtags/' target='_blank'>Spaghettitron's Splashtag Creator</a>"
             ),
+            new Art("modal-stylized-inkling", "myinkling 2.png", "Stylized inkling"),
             new Art("modal-bytes", "bytes.png", "Fnaf World's 7th anniversary"),
             new Art("modal-beer", "beer.png", "Glass of beer"),
-
-        ]
-
-        const artNames2023_2 = [
-        new Art("modal-bonk", "bonk.png", 'BONK poster'),
-        new Art("modal-exposed octocopter", "exposed octocopter.png", 'Exposed octocopter'),
-       
-            new Art("modal-stylized-inkling", "myinkling 2.png", "Stylized inkling"),
             new Art("modal-ned", "ned_celHeadshot_show.png", "Ned - commission for Razur-draws"),
-            new Art("modal-sparkleon", "sparkle on.png", "Sparkle on"),
-       
-        ]
-
-        const artNames2023_3 = [
-            new Art("modal-golden-candy", "golden candy_2.png", "Golden candy"),
-            new Art("modal-dl", "dl.png", "Dark Lori"),
             new Art("modal-tetra-bday", "bday.png", "Birthday gift for Tetracold"),
+            new Art("modal-sparkleon", "sparkle on.png", "Sparkle on"),
             new Art("modal-tentacles", "tentacles.png", "Tentacles"),
-            new Art("modal-mrsquid", "mr squid.png", "Mr squid"),
-        ]
+            new Art("modal-award", "AWARD.png", "Game Awards - Splatoon 3 for best multiplayer"),
+            new Art("modal-stingray", "stingray_can.png", "Stinger"),
+            new Art("modal-tf2_achievement", "tf2_achievement.png", "TF2 achievement style"),
+            new Art("modal-octofly", "octofly.png", "Octocopter and inkocopter"),
+            new Art("modal-electro", "electro.png", "Electro"),
+     
+            new Art("modal-molten_freddy", "molten_freddy.png", "Molten Freddy"),
+            new Art("modal-3d_silly_bot", ["3d_silly_bot.png","silly_botBSD.png"], "3D Silly bot"),
+            new Art("modal-magolor", "magolor.png", "Magolor"),
+            new Art("modal-subject", "subject.png", "Wired subject"),
+            new Art("modal-3d-void", "3d-void.png", "3D Void"),
+            new Art("modal-monokuma", "monokuma.png", "Monokuma"),
+            new Art("modal-shadow_bonnie", "shadow_bonnie.png", "Shadow Bonnie"),
+            new Art("modal-rayman_legends", "rayman_legends.png", "Rayman Legends"),
+            new Art("modal-silly_ufo", "silly_ufo.png", "3D Silly UFO"),
+            new Art("modal-ring", "ring.png", "Ring"),
+            new Art("modal-erasor_von_pencil", "erasor_von_pencil.png", "Erasor Von Pencil"),
 
-        var pageArtArray = [artNames2023_1, artNames2023_2,artNames2023_3];
+        ];
+
+        var pageArtArray = distributeInThreeArrays(artNames);
 
         createArtColumns(pageArtArray)
         createAndFireArtModalList(Modals_2023, pageArtArray)
-
-
-        ArtPath = "/Assets/Art/2022/"
-
-        const Modals_2022 = [];
-
-        const artNames2022_1 = [
-            new Art("modal-tartar", "tartar.png", "Commander Tartar"),
-            new Art("modal-stinger", "stingray_can.png", "Stinger"),
-            new Art("modal-tf2_achievement", "tf2_achievement.png", "TF2 achievement style"),
-            new Art("modal-octocopter", "octofly.png", "Octocopter and Inkycopter"),
-            new Art("modal-electro", "electro.png", "Electro"),
-            new Art("modal-3dsb", ["3d_silly_bot.png","silly_botBSD.png"], "Silly Bot 3D model"),
-            new Art("modal-void", "3d-void.png", "CMYK palette"),
-            new Art("modal-magolor", "magolor.png", "Magolor Soul EX"),
-
-           
-        ]//10
-
-        const artNames2022_2 = [
-            new Art("modal-award", "AWARD.png", "Best multiplayer award"),
-            new Art("modal-decoy", ["salmon_decoy.png","salmon_decoy_handbook1.png","salmon_decoy_handbook2.png"], 
-            "Salmonid boss concept - Decoy"),
-            new Art("modal-myinkling", "myinkling.png", "My inkling"),
-            new Art("modal-brush", "brush.png", "Inkbrush"),
-            new Art("modal-locker", "lockeropen.png", "Splatoon Locker"),
-            new Art("modal-zake", "zake.png", "Zake"),
-            new Art("modal-subject", "subject.png", "Wire subject"),
-            new Art("modal-k64-only-enemies", "k64_only_enemies.png", "Kirby 64 enemies"),
-
-            
-            
-        ]//13
-        //23
-        //8
-
-        const artNames2022_3 = [
-            new Art("modal-adeleine", "adeleine.png", "Adeleine's enemies"),
-            new Art("modal-shadow-bonnie", "shadow_bonnie.png", "Shadow Bonnie"),
-            new Art("modal-cn", "cn.png", "CMYK palette"),
-            new Art("modal-elechead", "elechead.png", "Elechead 3D model"),
-            new Art("modal-monokuma", "monokuma.png", "Monokuma"),
-            new Art("modal-molten-freddy", "molten_freddy.png", "Molten Freddy"),
-            new Art("modal-trash-gan", ["trash_gang.png","trash_gang_project.png"], "Trash Gang 3D models"),
-        ]
-
-        pageArtArray = [artNames2022_1,artNames2022_2,artNames2022_3];
-       
-        createArtColumns(pageArtArray);
-        createAndFireArtModalList(Modals_2022, pageArtArray)
-
-
-        ArtPath = "/Assets/Art/2021/"
-
-        const Modals_2021 = []
-
-        const artNames2021_1 = [
-         
-            new Art("modal-eraser", "erasor_von_pencil.png", "Erasor Von Pencil"),
-          
-        ]
-
-        const artNames2021_2 = [
-            new Art("modal-silly-ufo", "silly_ufo.png", "Silly UFO 3D model"),
-            
-        ]
-
-        const artNames2021_3 = [
-        new Art("modal-ring", "ring.png", "Ring"),
-            new Art("modal-rayman-legends", "rayman_legends.png", "Rayman Legends"),
-        ]
-
-        pageArtArray = [artNames2021_1, artNames2021_2,artNames2021_3]
-
-        createArtColumns(pageArtArray);
-        createAndFireArtModalList(Modals_2021, pageArtArray)
+ìì
 
         checkArtClick();
 
