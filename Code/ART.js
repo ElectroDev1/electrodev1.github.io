@@ -1,10 +1,11 @@
 let ArtPath = ""
 
 class Art {
-    constructor(modalName,fileName,name="default") {
+    constructor(modalName,fileName,name="default",hasVideo=false) {
         this.modalName = modalName;
         this.fileName = fileName;
         this.name = name;
+        this.hasVideo = hasVideo;
     }
 }
 
@@ -108,23 +109,73 @@ const generateArtModals = function(modalArray){
 
                     if(Array.isArray(art.fileName)===false){
 
-                        const imgContainer = document.createElement("div");
-                        imgContainer.style.display = "flex";
-                        imgContainer.style.justifyContent = "center";
-                        content.appendChild(imgContainer);
 
-                            const img = document.createElement("img");
-                            img.className = "modal-art-img";
-                            img.setAttribute("loading","lazy")
-                            img.setAttribute("alt", art.name);
-                            img.setAttribute("src", ArtPath+art.fileName);
-                            ArtImgs.push(img);
+                            if(art.hasVideo){
+                                const videoContainer = document.createElement("div");
+                                videoContainer.style.display = "flex";
+                                videoContainer.style.justifyContent = "center";
+                                content.appendChild(videoContainer);
+
+                                const video =  document.createElement("video");
+                                video.setAttribute("width","320")
+                                video.setAttribute("height","240");
+
+                                videoContainer.appendChild(video);
+
+                                const source = document.createElement("source");
+                                source.setAttribute("src",ArtPath+art.fileName);
+                                source.setAttribute("alt", art.name);
+                                source.setAttribute("type","video/mp4");
+
+                                video.appendChild(source);
+                                continue;
+                            }
+
+                                const imgContainer = document.createElement("div");
+                                imgContainer.style.display = "flex";
+                                imgContainer.style.justifyContent = "center";
+                                content.appendChild(imgContainer);
+
+                                const img = document.createElement("img");
+                                img.className = "modal-art-img";
+                                img.setAttribute("loading","lazy")
+                                img.setAttribute("alt", art.name);
+                                img.setAttribute("src", ArtPath+art.fileName);
+                                ArtImgs.push(img);
+                                
+                                imgContainer.appendChild(img);
+
                             
-                            imgContainer.appendChild(img);
 
                     }else{
 
                         for(let i=0; i<art.fileName.length; i++){
+
+                            if(art.hasVideo && i==0){
+                                const videoContainer = document.createElement("div");
+                                videoContainer.style.display = "flex";
+                                videoContainer.style.justifyContent = "center";
+                                content.appendChild(videoContainer);
+
+                                const video =  document.createElement("video");
+                                video.setAttribute("width","69%")
+                                video.setAttribute("loading","lazy");
+                                video.setAttribute("autoplay","true");
+                                video.setAttribute("controls","true");
+                                video.setAttribute("loop","true");
+                                
+
+                                videoContainer.appendChild(video);
+
+                                const source = document.createElement("source");
+                                source.setAttribute("src",ArtPath+art.fileName[i]);
+                                source.setAttribute("alt", art.name);
+                                source.setAttribute("type","video/mp4");
+                                
+
+                                video.appendChild(source);
+                                continue;
+                            }
 
                             const imgContainer = document.createElement("div");
                             imgContainer.style.display = "flex";
@@ -184,8 +235,13 @@ const addArtToColumn = function(artArray,elementId){
         const img = document.createElement("img");
 
 
+        let path = (Array.isArray(artName.fileName) === true ? artName.fileName[0] : artName.fileName);
 
-        img.setAttribute("src",ArtPath+"Icons/"+ (Array.isArray(artName.fileName) === true ? artName.fileName[0] : artName.fileName));
+        if(artName.hasVideo && Array.isArray(artName.fileName)){
+            path = artName.fileName[1];
+        }
+
+        img.setAttribute("src",ArtPath+"Icons/"+ path);
         img.setAttribute("alt",artName.name);
         img.setAttribute("openmodal",artName.modalName)
         img.setAttribute("loading","lazy")
