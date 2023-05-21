@@ -160,7 +160,6 @@ const generateArtModals = function(modalArray){
                                 const video =  document.createElement("video");
                                 video.setAttribute("width","69%")
                                 video.setAttribute("loading","lazy");
-                                video.setAttribute("autoplay","true");
                                 video.setAttribute("controls","true");
                                 video.setAttribute("loop","true");
                                 
