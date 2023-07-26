@@ -259,7 +259,7 @@ for (var o = links.length - 1; o >= 0; o--) {
     const date = new Date();
 
     var footer = document.getElementsByClassName('site-footer');
-    for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Electro '+date.getFullYear(); }
+    for (var o = footer.length - 1; o >= 0; o--) { footer[0].innerHTML = 'Ele '+date.getFullYear(); }
     
     const day = date.getDate();
     const month = date.getMonth()+1;
