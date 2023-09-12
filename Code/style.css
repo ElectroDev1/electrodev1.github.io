@@ -937,7 +937,7 @@ h1 {
 }
 
 .home-backdrop-p1 {
-    font-family: 'Inconsolata_site', sans-serif;
+    font-family: 'League Spartan','Inconsolata_site', sans-serif;
     font-size: 200%;
     margin: 0;
 
@@ -1000,7 +1000,7 @@ h1 {
 }
 
 .typewritten {
-    font-family: 'Inconsolata_site', sans-serif;
+    font-family:  'League Spartan','Inconsolata_site', sans-serif;
     font-size: 300%;
 
     overflow: hidden;
@@ -1668,7 +1668,7 @@ Skills
 }
 
 .skill-field p {
-    font-family: 'Inconsolata_site';
+    font-family:  'League Spartan thin','Inconsolata_site';
     font-size: 1.25em;
     text-align: center;
 }
@@ -1874,7 +1874,7 @@ Art
 }
 
 .blog-button-text {
-    font-family: 'Inconsolata_site'; user-select: none;
+    font-family:  'League Spartan','Inconsolata_site'; user-select: none;
 }
 
 .blog-button:hover {
@@ -1905,6 +1905,7 @@ Art
 }
 
 .info-li {
+    font-family: 'League spartan thin', 'Inconsolata_site';
     margin-bottom: 1.5rem;
 }
 
@@ -1933,7 +1934,7 @@ Art
 
 .modal-maintext {
     text-align: center;
-    font-family: 'Inconsolata_site';
+    font-family:  'League Spartan','Inconsolata_site';
     margin-bottom: 0;
     font-size: 1.25em;
 }
@@ -1970,7 +1971,7 @@ Art
 .comm-info-container{
     background:var(--color-dd-gray); margin-top:-15px;
         width:100%; height:auto; color:white;  padding:1px;
-        font-family:'Inconsolata_site'; overflow:hidden; font-size: 1.2em;
+        font-family: 'League Spartan','Inconsolata_site'; overflow:hidden; font-size: 1.2em;
 }
 
 .comm-tiers-container{
@@ -1999,7 +2000,7 @@ Art
 }
 
 .comm-tier > p{
-    font-family: 'Inconsolata_site', sans-serif;
+    font-family:  'League Spartan thin','Inconsolata_site', sans-serif;
     text-align: center;
     margin:0;
 }
