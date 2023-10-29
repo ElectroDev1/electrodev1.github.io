@@ -1,0 +1,90 @@
+<head>
+    
+    <script type="module" src="/mwonder/Code/player.js"></script>
+</head>
+
+<h1 style="font-size:3rem">Super Mario Wonder - Player database</h1>
+
+<select class="form-control" id="character">
+    <option value="001">Mario</option>
+    <option value="002">Luigi</option>
+    <option value="003">Peach</option>
+    <option value="004">Daisy</option>
+    <option value="005">Blue Toad</option>
+    <option value="006">Yellow Toad</option>
+    <option value="007">Toadette</option>
+</select>
+
+<ul class="mode-list">
+    <li class="mode-list-entry active"> <a class="mode-list-link">Speed</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Jump</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Slop Sliding</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Elephant</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Collision Tables</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Carry</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Swim</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Items</a> </li>
+    <li class="mode-list-entry"> <a class="mode-list-link">Eat</a> </li>
+</ul>
+
+
+
+<script>
+
+    const characterColors = [
+        [255,90,90],
+        [90,205,110],
+        [255,90,231],
+        [255,226,90],
+        [110,110,255],
+        [255,251,90],
+        [255,140,231],
+    ]
+
+    $(document).ready(function(){
+        $('#character').change(function(){
+            
+            var value = parseInt(this.value);
+
+            var color = characterColors[value-1];
+           
+            this.style.background = 
+            "linear-gradient(-90deg, " 
+            + "rgba(255,255,255,1.0) 70%"
+            + ", " 
+            + "rgba("+(color[0])+ ","+(color[1])+","+(color[2])+ ",1.0) 90%"
+            + ")";
+            
+            
+        });
+    });
+
+    
+    const listEntries = document.getElementsByClassName("mode-list-entry");
+
+    var index = 0;
+
+    for(var i=0; i<listEntries.length; i++){
+
+        var entry = listEntries[i]
+        
+        entry.addEventListener("click",toggle )
+
+    }
+
+    function toggle() {
+
+        for(var i=0; i<listEntries.length; i++){
+
+            var tentry = listEntries[i]
+
+            if(tentry.classList.contains("active")){
+                tentry.classList.remove("active")
+            }
+        }
+
+
+        this.classList.toggle("active");
+    }
+
+</script>

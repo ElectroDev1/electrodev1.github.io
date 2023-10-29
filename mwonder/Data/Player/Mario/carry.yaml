@@ -1,0 +1,50 @@
+Version: 7
+IsBigEndian: False
+SupportPaths: False
+HasReferenceNodes: False
+root:
+  BindRotDegOffsetLeft: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+  BindRotDegOffsetRight: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+  CarriedMethodOffset:
+    Chibi:
+      CarryMethodType:
+        BigGrab: {X: '0,33000', Y: '0,10000', Z: '0,20000'}
+        Block1x1: {X: '0,27500', Y: '0,10000', Z: '0,15000'}
+        Invalid: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        Madillo: {X: '0,15000', Y: '0,00000', Z: '0,00000'}
+        MechaKoopa: {X: '0,00000', Y: '0,15000', Z: '0,00000'}
+        None: {X: '0,05000', Y: '0,00000', Z: '-0,05000'}
+        Sphere1x1: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        SpringBlock1x1: {X: '0,10000', Y: '0,10000', Z: '0,20000'}
+        Takebo: {X: '0,08000', Y: '0,00000', Z: '-0,18000'}
+        Togezo: {X: '0,00000', Y: '-0,20000', Z: '0,00000'}
+    Elephant:
+      CarryMethodType:
+        BigGrab: {X: '0,33000', Y: '0,10000', Z: '0,20000'}
+        Block1x1: {X: '0,18000', Y: '0,10000', Z: '-0,12000'}
+        Invalid: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        Madillo: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        MechaKoopa: {X: '0,00000', Y: '0,13000', Z: '-0,15000'}
+        None: {X: '0,05000', Y: '0,00000', Z: '-0,05000'}
+        Sphere1x1: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        SpringBlock1x1: {X: '0,16000', Y: '0,10000', Z: '-0,12000'}
+        Takebo: {X: '0,08000', Y: '0,00000', Z: '-0,18000'}
+        Togezo: {X: '0,15000', Y: '-0,35000', Z: '-0,03000'}
+    Super:
+      CarryMethodType:
+        BigGrab: {X: '0,33000', Y: '0,10000', Z: '0,20000'}
+        Block1x1: {X: '0,18000', Y: '0,10000', Z: '-0,12000'}
+        Invalid: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        Madillo: {X: '0,15000', Y: '0,00000', Z: '0,00000'}
+        MechaKoopa: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        None: {X: '0,05000', Y: '0,00000', Z: '-0,05000'}
+        Sphere1x1: {X: '0,00000', Y: '0,00000', Z: '0,00000'}
+        SpringBlock1x1: {X: '0,10000', Y: '0,10000', Z: '0,20000'}
+        Takebo: {X: '0,08000', Y: '0,00000', Z: '-0,18000'}
+        Togezo: {X: '0,00000', Y: '-0,20000', Z: '0,00000'}
+  CarrierType: Player
+  CarryNode: Item
+  CarrySensorRigidBodyName:
+    - Attack
+    - AttackElephantVaccum
+  SetCarriedSameDir: true

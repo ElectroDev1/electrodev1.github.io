@@ -1,0 +1,178 @@
+Version: 7
+IsBigEndian: False
+SupportPaths: False
+HasReferenceNodes: False
+root:
+  CharaType: Mario
+  CollisionTable:
+    BigJumpAttackHeadSensorTable:
+      OffsetPos: {X: '0,00000', Y: '0,00000'}
+      SensorLengthXRate: 1,35000
+      SensorLengthY: 0,85000
+    ChibiCollisionTable:
+      CollisionTypeData:
+        Normal:
+          AttackSensorHeight: 0,95000
+          AttackSensorRadius: 0,30000
+          EntityHeight: 0,96000
+          EntityHeightSholder: 0,76159
+          EntityHeightStep: 0,69159
+          EntityRadius: 0,46255
+          HeadEntityExtentsX: 0,26000
+          HeadEntityExtentsY: 0,20000
+          HeadSensorPos: {X: '0,00000', Y: '0,65000'}
+          ItemGetSensorHeight: 0,95000
+          ItemGetSensorRadius: 0,30000
+          SensorHeight: 0,87500
+          SensorRadius: 0,25000
+        Squat:
+          AttackSensorHeight: 0,70000
+          AttackSensorRadius: 0,30000
+          EntityHeight: 0,80000
+          EntityHeightSholder: 0,70159
+          EntityHeightStep: 0,69159
+          EntityRadius: 0,46255
+          HeadEntityExtentsX: 0,26000
+          HeadEntityExtentsY: 0,20000
+          HeadSensorPos: {X: '0,00000', Y: '0,65000'}
+          ItemGetSensorHeight: 0,70000
+          ItemGetSensorRadius: 0,30000
+          SensorHeight: 0,43750
+          SensorRadius: 0,25000
+      HipDropSensorRadius: 0,33000
+      StampSensorRadius: 0,45000
+      StampSensorWaterRadius: 0,62000
+      StampSensorWhenHipDropRadius: 0,52000
+    DefaultAttackHeadSensorTable: {SensorLengthXRate: '1,00000'}
+    DrillAttackHeadSensorTable: {SensorLengthXRate: '1,35000', SensorLengthY: '0,67000'}
+    DrillJumpHeadSensorTable:
+      OffsetPos: {X: '0,00000', Y: '0,12500'}
+      SensorLengthXRate: 2,00000
+      SensorLengthY: 1,00000
+    ElephantCollisionTable:
+      CollisionTypeData:
+        Normal:
+          AttackSensorHeight: 2,40000
+          AttackSensorRadius: 0,73745
+          EntityHeight: 2,53125
+          EntityHeightSholder: 2,05000
+          EntityHeightStep: 0,95000
+          EntityRadius: 0,90000
+          HeadEntityExtentsX: 0,65000
+          HeadEntityExtentsY: 0,50000
+          HeadSensorPos: {X: '0,00000', Y: '1,54000'}
+          ItemGetSensorHeight: 2,90000
+          ItemGetSensorRadius: 0,73745
+          SensorHeight: 2,25000
+          SensorRadius: 0,70745
+        ShrinkHeight:
+          AttackSensorHeight: 1,66000
+          AttackSensorRadius: 0,73745
+          EntityHeight: 1,68750
+          EntityHeightSholder: 1,05000
+          EntityHeightStep: 0,95000
+          EntityRadius: 0,90000
+          HeadEntityExtentsX: 0,65000
+          HeadEntityExtentsY: 0,30000
+          HeadSensorPos: {X: '0,00000', Y: '1,54000'}
+          ItemGetSensorHeight: 1,66000
+          ItemGetSensorRadius: 0,73745
+          SensorHeight: 1,50000
+          SensorRadius: 0,70745
+        Squat:
+          AttackSensorHeight: 1,10000
+          AttackSensorRadius: 0,73745
+          EntityHeight: 0,97000
+          EntityHeightSholder: 0,96000
+          EntityHeightStep: 0,95000
+          EntityRadius: 0,90000
+          HeadEntityExtentsX: 0,65000
+          HeadEntityExtentsY: 0,10000
+          HeadSensorPos: {X: '0,00000', Y: '0,65000'}
+          ItemGetSensorHeight: 1,10000
+          ItemGetSensorRadius: 0,73745
+          SensorHeight: 0,87500
+          SensorRadius: 0,70745
+      HipDropSensorRadius: 0,67500
+      StampSensorRadius: 1,00000
+      StampSensorWaterRadius: 1,50000
+      StampSensorWhenHipDropRadius: 1,15000
+    HoppinSuperCollisionTable:
+      CollisionTypeData:
+        Normal:
+          AttackSensorHeight: 1,60000
+          AttackSensorRadius: 0,75000
+          EntityHeight: 1,44000
+          EntityHeightSholder: 1,14239
+          EntityHeightStep: 0,90000
+          EntityRadius: 0,69383
+          HeadEntityExtentsX: 0,37000
+          HeadEntityExtentsY: 0,30000
+          HeadSensorPos: {X: '0,00000', Y: '0,97500'}
+          ItemGetSensorHeight: 1,60000
+          ItemGetSensorRadius: 0,75000
+          SensorHeight: 1,40000
+          SensorRadius: 0,60000
+      HipDropSensorRadius: 0,49500
+      StampSensorRadius: 0,67500
+      StampSensorWaterRadius: 0,93000
+      StampSensorWhenHipDropRadius: 0,67500
+    OverLookElephantCollisionTable:
+      CollisionTypeData:
+        Normal:
+          AttackSensorHeight: 1,60000
+          AttackSensorRadius: 0,75000
+          EntityHeight: 1,59000
+          EntityHeightSholder: 1,29239
+          EntityHeightStep: 0,90000
+          EntityRadius: 0,69383
+          HeadEntityExtentsX: 0,37000
+          HeadEntityExtentsY: 0,30000
+          HeadSensorPos: {X: '0,00000', Y: '0,97500'}
+          ItemGetSensorHeight: 1,60000
+          ItemGetSensorRadius: 0,75000
+          SensorHeight: 1,40000
+          SensorRadius: 0,60000
+      HipDropSensorRadius: 0,49500
+      StampSensorRadius: 0,67500
+      StampSensorWaterRadius: 0,93000
+      StampSensorWhenHipDropRadius: 0,67500
+    RideDrillAttackHeadSensorTable:
+      OffsetPos: {X: '0,00000', Y: '-0,30000'}
+      SensorLengthXRate: 1,35000
+      SensorLengthY: 0,67000
+    SuperCollisionTable:
+      CollisionTypeData:
+        Normal:
+          AttackSensorHeight: 1,66000
+          AttackSensorRadius: 0,30000
+          EntityHeight: 1,68750
+          EntityHeightSholder: 1,34159
+          EntityHeightStep: 0,69159
+          EntityRadius: 0,46255
+          HeadEntityExtentsX: 0,26000
+          HeadEntityExtentsY: 0,30000
+          HeadSensorPos: {X: '0,00000', Y: '0,92000'}
+          ItemGetSensorHeight: 1,90000
+          ItemGetSensorRadius: 0,30000
+          SensorHeight: 1,50000
+          SensorRadius: 0,27000
+        Squat:
+          AttackSensorHeight: 0,95000
+          AttackSensorRadius: 0,30000
+          EntityHeight: 0,96000
+          EntityHeightSholder: 0,76159
+          EntityHeightStep: 0,69159
+          EntityRadius: 0,46255
+          HeadEntityExtentsX: 0,26000
+          HeadEntityExtentsY: 0,20000
+          HeadSensorPos: {X: '0,00000', Y: '0,65000'}
+          ItemGetSensorHeight: 0,95000
+          ItemGetSensorRadius: 0,30000
+          SensorHeight: 0,87500
+          SensorRadius: 0,25000
+      HipDropSensorRadius: 0,33000
+      StampSensorRadius: 0,48000
+      StampSensorWaterRadius: 0,65000
+      StampSensorWhenHipDropRadius: 0,56000
+  IsRideYoshiBindRotTrans: false

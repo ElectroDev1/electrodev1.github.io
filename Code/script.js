@@ -264,7 +264,7 @@ for (var o = links.length - 1; o >= 0; o--) {
     const day = date.getDate();
     const month = date.getMonth()+1;
     
-    if(month == 10 && day>=29){
+    if(month == 10 && day>=27){
     
         //Set halloween style
         const HalloweenLink = document.getElementById('halloweenStyle');

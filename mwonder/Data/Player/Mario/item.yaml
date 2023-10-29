@@ -1,0 +1,40 @@
+Version: 7
+IsBigEndian: False
+SupportPaths: False
+HasReferenceNodes: False
+root:
+  AddtionalGetItemSettingDic:
+    DisableItemGet: {}
+    DrillDig:
+      AwaFlower: false
+      CoinDefault: true
+      DrillSuit: false
+      ElephantSuit: false
+      FireFlower: false
+      ItemBubble: false
+      ItemKey: false
+      Kinoko: false
+      Kinoko1Up: false
+      PlusWatch: true
+      Star: false
+      WonderChip: false
+      WonderHole: false
+      WonderSeed: false
+    OnlyCoin: {CoinDefault: true}
+  DefaultGetItemSetting:
+    AwaFlower: true
+    CoinDefault: true
+    DrillSuit: true
+    ElephantSuit: true
+    FireFlower: true
+    ItemBalloon: true
+    ItemBubble: true
+    ItemKey: true
+    Kinoko: true
+    Kinoko1Up: true
+    PlusWatch: true
+    Star: true
+    WonderChip: true
+    WonderHole: true
+    WonderSeed: true
+    WonderStar: true

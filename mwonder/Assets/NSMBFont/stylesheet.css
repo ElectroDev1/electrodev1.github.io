@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'NinNewSuperMarioBrosT53Reg';
+    src: url('NinNewSuperMarioBrosT53Reg.eot');
+    src: url('NinNewSuperMarioBrosT53Reg.eot?#iefix') format('embedded-opentype'),
+        url('NinNewSuperMarioBrosT53Reg.woff2') format('woff2'),
+        url('NinNewSuperMarioBrosT53Reg.woff') format('woff'),
+        url('NinNewSuperMarioBrosT53Reg.ttf') format('truetype'),
+        url('NinNewSuperMarioBrosT53Reg.svg#NinNewSuperMarioBrosT53Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
