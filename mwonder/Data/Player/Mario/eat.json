@@ -1,0 +1,12 @@
+{
+	"Version": 7,
+	"IsBigEndian": false,
+	"SupportPaths": false,
+	"HasReferenceNodes": false,
+	"root": {
+		"BindNodeName": "Eat",
+		"BlackboardTableRef": "Work/Component/Blackboard/BlackboardParamTable/EatComponentCommon.engine__component__BlackboardParamTable.gyml",
+		"IsUseSafePosOffset": true,
+		"SafePosOffsetY": "0,50000"
+	}
+}

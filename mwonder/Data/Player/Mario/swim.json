@@ -1,0 +1,295 @@
+{
+	"Version": 7,
+	"IsBigEndian": false,
+	"SupportPaths": false,
+	"HasReferenceNodes": false,
+	"root": {
+		"CarrySwimOuterDecRate": "0,01000",
+		"CarrySwimPowXNormal": "0,20000",
+		"CarrySwimPowXStop": "0,15000",
+		"CarrySwimPowXTurn": "0,42000",
+		"CarrySwimPowYNormal": "0,33000",
+		"CarrySwimPowYStop": "0,15000",
+		"CarrySwimPowYTurn": "0,42000",
+		"CarrySwimTargetSpeedKeyX": 600000,
+		"CarrySwimTargetSpeedKeyY": 400000,
+		"CarrySwimTargetSpeedX": "0,00000",
+		"CarrySwimTargetVelYNonInput": -250000,
+		"GoQKunDownSurfaceDegree": 5000000,
+		"GoQKunDownSurfaceDegreeOffset": -2500000,
+		"GoQKunDownSurfaceFrame": 2400000,
+		"GoQKunDownSurfaceRotateVolume": 500000,
+		"GoQKunPaddleFrame": 3200000,
+		"GoQKunPaddleRotateVolume": 175000,
+		"GoQKunRotateVolume": 550000,
+		"GoQKunRotateVolumeAccel": "0,35000",
+		"GoodSwimAttackSizeElephant": {
+			"X": "1,80000",
+			"Y": "2,10000"
+		},
+		"GoodSwimAttackSizeNormal": {
+			"X": "0,90000",
+			"Y": "0,90000"
+		},
+		"GoodSwimAttackSizeSuper": {
+			"X": "1,10000",
+			"Y": "1,30000"
+		},
+		"GoodSwimCancelCounterAttackBtn": 2500000,
+		"GoodSwimCancelCounterSwimBtn": 4500000,
+		"GoodSwimDrillAtSensorOffset": {
+			"X": "0,50000",
+			"Y": "0,00000",
+			"Z": "0,00000"
+		},
+		"GoodSwimDrillAtSensorSize": {
+			"X": "0,35000",
+			"Y": "0,20000",
+			"Z": "0,00000"
+		},
+		"GoodSwimLimitBackKeyThreshold": "0,50000",
+		"GoodSwimLimitCheckOffsetY": 150000,
+		"GoodSwimLimitFrontKeyThreshold": "0,50000",
+		"GoodSwimTargetOffsetYChibi": "0,25000",
+		"GoodSwimTargetOffsetYElp": "0,25000",
+		"GoodSwimTargetOffsetYSuper": "0,60000",
+		"GoodSwimTargetSizeChibi": {
+			"X": "0,87500",
+			"Y": "0,50000"
+		},
+		"GoodSwimTargetSizeElp": {
+			"X": "2,25000",
+			"Y": "1,40000"
+		},
+		"GoodSwimTargetSizeSuper": {
+			"X": "1,50000",
+			"Y": "0,50000"
+		},
+		"GoodSwimmerAcceleCounter": 6000000,
+		"GoodSwimmerAcceleX": "0,75000",
+		"GoodSwimmerAcceleY": "0,75000",
+		"GoodSwimmerActionCounter": 8000000,
+		"GoodSwimmerAfterGravityCounter": 3000000,
+		"GoodSwimmerAfterGravityScale": "0,30000",
+		"GoodSwimmerAimSpeedX": 800000,
+		"GoodSwimmerAimSpeedY": 800000,
+		"GoodSwimmerAttackEndFrame": 7000000,
+		"GoodSwimmerAttackStartFrame": "0,00000",
+		"GoodSwimmerBackKeyAccele": "0,20000",
+		"GoodSwimmerBackKeyEndSpeed": 300000,
+		"GoodSwimmerBackKeyThreshold": "0,40000",
+		"GoodSwimmerDashWaitCounter": "0,00000",
+		"GoodSwimmerDeceleY": "0,07500",
+		"GoodSwimmerFinishDecele": "0,05000",
+		"GoodSwimmerFrontKeyThreshold": "0,40000",
+		"GoodSwimmerInvalidCount": 4000000,
+		"GoodSwimmerMoveRotAccele": "0,05000",
+		"GoodSwimmerOuterDecFrame": 9000000,
+		"GoodSwimmerOuterDecRate": "0,25000",
+		"GoodSwimmerTurnSpeedRate": "0,50000",
+		"JumpGoQKunTable": {
+			"JumpVelocityGround": 703100,
+			"JumpVelocityNormal": [
+				{
+					"CheckVelocity": "-2,00000",
+					"JumpVelocity": "4,25000"
+				},
+				{
+					"CheckVelocity": "-99,00000",
+					"JumpVelocity": "8,12500"
+				}
+			],
+			"JumpVelocityRequestJump": 1230000
+		},
+		"JumpSpaceWalkTable": {
+			"JumpVelocityGround": 703100,
+			"JumpVelocityNormal": [
+				{
+					"CheckVelocity": "-2,00000",
+					"JumpVelocity": "3,40000"
+				},
+				{
+					"CheckVelocity": "-99,00000",
+					"JumpVelocity": "6,50000"
+				}
+			],
+			"JumpVelocityRequestJump": 1230000
+		},
+		"JumpTable": {
+			"JumpVelocityGround": 703100,
+			"JumpVelocityNormal": [
+				{
+					"CheckVelocity": "-2,00000",
+					"JumpVelocity": "5,62500"
+				},
+				{
+					"CheckVelocity": "-99,00000",
+					"JumpVelocity": "7,80000"
+				}
+			],
+			"JumpVelocityRequestJump": 1230000,
+			"JumpVelocitySquat": 562500
+		},
+		"ProhibitPaddleWhenUpImpactFrame": 1200000,
+		"SpaceSwimRotateMinVolume": 100000,
+		"SpaceSwimRotateVolume": 250000,
+		"SurfaceSwimJump": 1200000,
+		"SwimDashNeutralFrame": 4500000,
+		"SwimDashNeutralSpeed": "0,05000",
+		"SwimDashShapeRotRate": "0,42000",
+		"SwimGoQKunGravityTable": {
+			"MaxFallVelocityKey": -525000,
+			"MaxFallVelocityNormal": -525000,
+			"MaxRiseVelocity": 625000,
+			"NormalGravityTable": [
+				{
+					"CheckSpeed": "0,00000",
+					"GravityScale": "0,16000"
+				},
+				{
+					"CheckSpeed": "-99,00000",
+					"GravityScale": "0,22000"
+				}
+			],
+			"StampGravityTable": [
+				{
+					"CheckSpeed": "6,00000",
+					"GravityScale": "2,00000"
+				},
+				{
+					"GravityScale": "0,32000"
+				},
+				{
+					"CheckSpeed": "-99,00000",
+					"GravityScale": "0,31800"
+				}
+			],
+			"UpImpactGravityScale": 900000
+		},
+		"SwimGoQKunVeloctyTable": {
+			"MaxSpeedGround": 325000,
+			"MaxSpeedInAir": 450000,
+			"PowGroundNormal": "0,12000",
+			"PowGroundReverse": "0,82000",
+			"PowGroundStop": "0,15000",
+			"PowInAirNormal": "0,10000",
+			"PowInAirReverse": "0,15500",
+			"PowInAirStop": "0,08000",
+			"PowSquatNormal": 200000,
+			"PowSquatReverse": 200000,
+			"PowSquatStop": 200000
+		},
+		"SwimGravityTable": {
+			"MaxFallVelocityNormal": -562500,
+			"MaxRiseVelocity": 625000,
+			"NormalGravityTable": [
+				{
+					"CheckSpeed": "0,00000",
+					"GravityScale": "0,34350"
+				},
+				{
+					"CheckSpeed": "-99,00000",
+					"GravityScale": "0,31800"
+				}
+			],
+			"StampGravityTable": [
+				{
+					"CheckSpeed": "6,00000",
+					"GravityScale": "2,00000"
+				},
+				{
+					"GravityScale": "0,32000"
+				},
+				{
+					"CheckSpeed": "-99,00000",
+					"GravityScale": "0,31800"
+				}
+			],
+			"UpImpactGravityScale": 900000
+		},
+		"SwimSpaceWalkGravityTable": {
+			"MaxFallVelocityNormal": -450000,
+			"MaxRiseVelocity": 450000,
+			"NormalGravityTable": [
+				{
+					"CheckSpeed": "0,00000",
+					"GravityScale": "0,10000"
+				},
+				{
+					"CheckSpeed": "-99,00000",
+					"GravityScale": "0,21000"
+				}
+			],
+			"StampGravityTable": [
+				{
+					"CheckSpeed": "6,00000",
+					"GravityScale": "2,00000"
+				},
+				{
+					"GravityScale": "0,32000"
+				},
+				{
+					"CheckSpeed": "-99,00000",
+					"GravityScale": "0,31800"
+				}
+			],
+			"UpImpactGravityScale": 900000
+		},
+		"SwimSpaceWalkVeloctyTable": {
+			"MaxSpeedGround": 325000,
+			"PowGroundNormal": "0,12000",
+			"PowGroundReverse": "0,82000",
+			"PowGroundStop": "0,15000",
+			"PowInAirNormal": "0,09375",
+			"PowInAirReverse": "0,14375",
+			"PowInAirStop": "0,10750",
+			"PowSquatNormal": 200000,
+			"PowSquatReverse": 200000,
+			"PowSquatStop": 200000
+		},
+		"SwimVeloctyTable": {
+			"MaxSpeedGround": 325000,
+			"PowGroundNormal": "0,12000",
+			"PowGroundReverse": "0,82000",
+			"PowGroundStop": "0,15000",
+			"PowInAirNormal": "0,09375",
+			"PowInAirReverse": "0,14375",
+			"PowInAirStop": "0,10750",
+			"PowSquatNormal": 200000,
+			"PowSquatReverse": 200000,
+			"PowSquatStop": 200000
+		},
+		"WaterDownFlowEffectFrame": 1300000,
+		"WaterInDashParamSpeed": 1050000,
+		"WaterInStartSpeedMaxX": 800000,
+		"WaterInStartSpeedMinX": -1500000,
+		"WaterInStartSpeedMinY": -1000000,
+		"WaterInSwimCounter": 1300000,
+		"WaterInVeloctyDashTable": {
+			"MaxSpeedGround": 325000,
+			"MaxSpeedInAir": 421875,
+			"PowGroundNormal": "0,12000",
+			"PowGroundReverse": "0,82000",
+			"PowGroundStop": "0,12000",
+			"PowInAirNormal": "0,09375",
+			"PowInAirReverse": "0,65000",
+			"PowInAirStop": "0,12500",
+			"PowSquatNormal": 200000,
+			"PowSquatReverse": 200000,
+			"PowSquatStop": 200000
+		},
+		"WaterInVeloctyTable": {
+			"MaxSpeedGround": 325000,
+			"MaxSpeedInAir": 421875,
+			"PowGroundNormal": "0,12000",
+			"PowGroundReverse": "0,82000",
+			"PowGroundStop": "0,12000",
+			"PowInAirNormal": "0,09375",
+			"PowInAirReverse": "0,65000",
+			"PowInAirStop": "0,01750",
+			"PowSquatNormal": 200000,
+			"PowSquatReverse": 200000,
+			"PowSquatStop": 200000
+		}
+	}
+}
