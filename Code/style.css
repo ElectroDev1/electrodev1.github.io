@@ -1537,11 +1537,13 @@ Game buttons
     user-select: none;
     color: white;
     margin: 5px -15px;
+    text-align: left;
 }
 
 .site-footer p {
     position: relative;
     top: 10px;
+    text-align: left;
 }
 
 .standard-button {
