@@ -108,7 +108,7 @@ const generateArtModals = function(modalArray){
                     if(Array.isArray(art.fileName)===false){
 
 
-                            if(art.hasVideo){
+                            if(art.fileName.endsWith(".mp4")){
                                 const videoContainer = document.createElement("div");
                                 videoContainer.style.display = "flex";
                                 videoContainer.style.justifyContent = "center";
@@ -149,7 +149,7 @@ const generateArtModals = function(modalArray){
 
                         for(let i=0; i<art.fileName.length; i++){
 
-                            if(art.hasVideo && i==0){
+                            if(art.fileName[i].endsWith(".mp4")){
                                 const videoContainer = document.createElement("div");
                                 videoContainer.style.display = "flex";
                                 videoContainer.style.justifyContent = "center";
