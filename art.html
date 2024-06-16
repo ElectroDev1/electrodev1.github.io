@@ -66,12 +66,16 @@
 
     <div class="site-content">
 
-        <h1 style="color:white; text-align:center;" id="games">2D ART</h1>
+        <h1 style="color:white; text-align:center;" id="art-header-bestof">ELE'S BEST</h1>
+
+        <div class="art-container" id="artBest"></div>
+
+        <h1 style="color:white; text-align:center;" id="art-header-2d">2D ART</h1>
 
         <div class="art-container" id="art2D"></div>
 
 
-        <h1 style="color:white; text-align:center;" id="games">3D ART</h1>
+        <h1 style="color:white; text-align:center;" id="art-header-3d">3D ART</h1>
 
         <div class="art-container" id="art3D"></div>
 
@@ -91,9 +95,20 @@
 
         ArtPath = "/Assets/Art/"
 
-        const Modals = [];
+        const Modals_art_best = [];
 
-        
+        const artNames_Best = [
+        new Art("modal-best-sectonia", ["sectonia.mp4","sectonia.png","sectonia_process.png"], "Queen Sectonia 3D model",true),
+        new Art("modal-best-freedomFlower", "freedom_flower.png", "Freedom flower"),
+        new Art("modal-best-zake3d", ["zake.png","ZAKE_spin.mp4"], "Zake 3D model"),
+        new Art("modal-best-gotAChip", ["gotachipA.png","gotachipB.png"], "Got a chip"),
+        //new Art("modal-SL", "SL.png", "SL"),
+        ]
+
+        var pageArtArrayBest = distributeInThreeArrays(artNames_Best);
+
+        createArtColumns(pageArtArrayBest, "artBest")
+        createAndFireArtModalList(Modals_art_best, pageArtArrayBest)
 
         ArtPath = "/Assets/Art/"
 
@@ -184,6 +199,7 @@
       const Modals_art_3D = [];
 
         const artNames_3D = [
+            new Art("modal-sectonia", ["sectonia.mp4","sectonia.png","sectonia_process.png"], "Queen Sectonia 3D model",true),
             new Art("modal-lowpoly_mario_A", ["marioenemies.png","bulletbill.mp4","outmaway.mp4","sugarstar_render2.mp4","revver.mp4","baboom.mp4","hoppo.mp4","Bramball_final.mp4"], "Zake 3D model"),
             new Art("modal-zake3d", ["zake.png","ZAKE_spin.mp4"], "Zake 3D model"),
             new Art("modal-gmhead", ["mako.png","MAKO_apple.mp4","MAKO_crazyshoe.mp4"], "Mako 3D model"),
