@@ -1,11 +1,13 @@
+
 let ArtPath = ""
 
 class Art {
-    constructor(modalName,fileName,name="default",hasVideo=false) {
+    constructor(modalName,fileName,name="default",hasVideo=false,ignoreLaterFiles=false) {
         this.modalName = modalName;
         this.fileName = fileName;
         this.name = name;
         this.hasVideo = hasVideo;
+        this.ignoreLaterFiles = ignoreLaterFiles;
     }
 }
 
@@ -107,6 +109,8 @@ const generateArtModals = function(modalArray){
 
                     if(Array.isArray(art.fileName)===false){
 
+                            
+
 
                             if(art.fileName.endsWith(".mp4")){
                                 const videoContainer = document.createElement("div");
@@ -171,6 +175,11 @@ const generateArtModals = function(modalArray){
                                 
 
                                 video.appendChild(source);
+
+                                if(art.ignoreLaterFiles){
+                                    break;
+                                }
+
                                 continue;
                             }
 
@@ -186,6 +195,11 @@ const generateArtModals = function(modalArray){
                                 img.setAttribute("src", ArtPath+art.fileName[i]);
                                 imgContainer.appendChild(img);   
                                 ArtImgs.push(img);
+
+                                if(art.ignoreLaterFiles){
+                                    break;
+                                }
+
 
                         }
 
