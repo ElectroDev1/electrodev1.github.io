@@ -153,6 +153,10 @@ const generateArtModals = function(modalArray){
 
                         for(let i=0; i<art.fileName.length; i++){
 
+                            if(art.hasVideo && i==1){
+                                continue;
+                            }
+
                             if(art.fileName[i].endsWith(".mp4")){
                                 const videoContainer = document.createElement("div");
                                 videoContainer.style.display = "flex";
@@ -177,7 +181,7 @@ const generateArtModals = function(modalArray){
                                 video.appendChild(source);
 
                                 if(art.ignoreLaterFiles){
-                                    break;
+                                    break
                                 }
 
                                 continue;

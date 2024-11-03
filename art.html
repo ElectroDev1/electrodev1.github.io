@@ -66,18 +66,20 @@
 
     <div class="site-content">
 
-        <h1 style="color:white; text-align:center;" id="art-header-bestof">ELE'S BEST</h1>
+        <!--<h1 style="color:white; text-align:center; visibility:hidden;" id="art-header-bestof">ELE'S BEST</h1>
 
-        <div class="art-container" id="artBest"></div>
+        <div style=" visibility:;" class="art-container" id="artBest"></div>-->
+
+        <h1 style="color:white; text-align:center;" id="art-header-3d">3D ART</h1>
+
+        <div class="art-container" id="art3D"></div>
 
         <h1 style="color:white; text-align:center;" id="art-header-2d">2D ART</h1>
 
         <div class="art-container" id="art2D"></div>
 
 
-        <h1 style="color:white; text-align:center;" id="art-header-3d">3D ART</h1>
-
-        <div class="art-container" id="art3D"></div>
+        
 
 
         <div class="site-footer">
@@ -107,8 +109,8 @@
 
         var pageArtArrayBest = distributeInThreeArrays(artNames_Best);
 
-        createArtColumns(pageArtArrayBest, "artBest")
-        createAndFireArtModalList(Modals_art_best, pageArtArrayBest)
+        //createArtColumns(pageArtArrayBest, "artBest")
+        //createAndFireArtModalList(Modals_art_best, pageArtArrayBest)
 
         ArtPath = "/Assets/Art/"
 
@@ -200,7 +202,10 @@
       const Modals_art_3D = [];
 
         const artNames_3D = [
-            new Art("modal-3d-ele",["ele3D.mp4","ele3D.png"],"ELE in 3D",true,true),
+            new Art("modal-pomme",["pomme.mp4","pomme.png"],"Pomme - Commission for @Heroic0utlaw",true,true),
+            new Art("modal-biograffiti", ["biograffiti.mp4","biograffiti.png"],"Bioluminescent Graffiti - Design by <a class='normal-link' href='https://x.com/Gaziter' target='_blank'>Gatizer</a>",true,true),
+            new Art("modal-env-patchedplains",["PatchedPlains.mp4","PatchedPlains.png"],"Patched Plains",true,true),
+            new Art("modal-3d-ele",["ele3D.mp4","ele3D.png","ele3d_anim1.mp4","ele3d_anim2.mp4"],"ELE in 3D",true,false),
             new Art("modal-3d-peashooter",["Peashooter.mp4","Peashooter.png"],"Peashooter",true,true),
             new Art("modal-3d-magolor",["Magolor.mp4","Magolor3D.png"],"Amigo",true,true),
             new Art("modal-3d-amigo",["Amigo.mp4","Amigo.png"],"Amigo",true,true),
@@ -211,7 +216,7 @@
             new Art("modal-lowpoly_mario_A", ["marioenemies.png","bulletbill.mp4","outmaway.mp4","sugarstar_render2.mp4","revver.mp4","baboom.mp4","hoppo.mp4","Bramball_final.mp4"], "Low poly mario enemies"),
             new Art("modal-zake3d", ["zake.png","ZAKE_spin.mp4"], "Zake 3D model"),
             new Art("modal-gmhead", ["mako.png","MAKO_apple.mp4","MAKO_crazyshoe.mp4"], "Mako 3D model"),
-            //new Art("modal-secCam", "secCam.png", "Security camera"),
+            new Art("modal-secCam", "secCam.png", "Security camera"),
             //new Art("modal-lavaVid", "lavaVid.gif", "Lava flow"),
             //new Art("modal-paintS3", "paintS3.png", "Painterly Splatoon 3 models"),
             //new Art("modal-streamer", "streamer.png", "Streamer"),
