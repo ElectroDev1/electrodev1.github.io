@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YOUR SOUL WILL BE MELTED</title>
+    <link rel="icon" id="site-icon" href="/Assets/site_icon.png">
+
+    <script src="\Code\jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e637404688.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <link rel="stylesheet" href="\Code\style.css">
+    <link rel="stylesheet" id="halloweenStyle" >
+    <link rel="stylesheet" id="christmasStyle" >
+
+    <meta property="og:url" content="https://electrodev1.github.io/springescape-qna">
+    <meta property="og:image" content="https://electrodev1.github.io/Assets/site_icon.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@EIectroDev" />
+    <meta name="twitter:creator" content="@EIectroDev" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(function () { $(".navbar").load("navbar.html"); });
+        //window.location.replace("https://electrodev1.github.io");
+        
+    </script>
+
+    <style>
+     :root{
+            --color-b-yellow: #000000;
+            --color-b-purple: #000000;
+            --color-purple: #000000;
+            --color-gray: #000000;
+            --color-d-gray: #000000;
+            --color-dd-gray: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="site-content">
+
+        <img id="soul" style="cursor: pointer !important; width:50%; display:block; filter:brightness(150); inset:0; margin:auto; user-select:none; " src="/Assets/Stories/gladiolus.jpg">
+ 
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    let times = 0
+
+    var picture = document.getElementById('soul');
+    
+    picture.addEventListener("click", function() {
+        times++
+        if(times<2){
+            alert("B>4>3>2>1")
+        }else{
+             window.location.href="/springescape-qna.html"
+             document.title = "we have been abandoned"
+        }
+    }); 
+
+</script>
+
+<!--
+     <button class="modal-open"  openmodal="modal-2">
+        Click me to open the modal
+        </button>
+-->
