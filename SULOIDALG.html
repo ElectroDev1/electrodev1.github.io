@@ -47,7 +47,10 @@
 
 <body>
 
-
+    <audio id="myAudio" loop="true">
+        <source src="/Assets/Stories/wait.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
 
 
 
@@ -68,15 +71,29 @@
 
     var picture = document.getElementById('soul');
     
+    var x = document.getElementById("myAudio"); 
+
+    
+
     picture.addEventListener("click", function() {
         times++
         if(times<2){
+            x.play()
             alert("B>4>3>2>1")
+        
         }else{
-             window.location.href="/springescape-qna.html"
+            x.play()
+             if(times==2){window.location.href="/springescape-qna.html"}
+             
              document.title = "we have been abandoned"
+             if(times==15){document.title="die"}
+             if(times==7){document.title="I"}
+             if(times==20){document.title="with you"}
+             
         }
     }); 
+
+
 
 </script>
 
